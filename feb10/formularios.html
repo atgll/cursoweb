@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
@@ -9,10 +10,28 @@
     <header>
         <h2>Formularios</h2>
     </header>
-    <section>
-       <form action="./php/recibodatos.php" method="get"></form>
-         <input type="text", name="nombre">
+    <section class="formularios">
+        <form action="./php/recibodatos.php" method="post" enctype="multipart/form-data" name="formulario 1" id="form-1"></form>
+        <label for="nombre">Name</label>
+         <input type="text", name="nombre", value=""><br>
+         <label for="apellido">Surname</label>
+         <input type="text", name="apellido", value=""><br>
+         <label for="email">E-mail</label>
+         <input type="email", name="email", value=""><br>
+         <label for="telefono">Teléfono</label>
+         <input type="tel", name="telefono", value=""><br>
+         <label for="url">URL</label>
+         <input type="url", name="url", value=""><br>
+         <label for="age">Age</label>
+         <input type="number" name="age" id="" min="18" max="50" step=""><br>
+         <label for="precio">Precio</label>
+         <input type="range" name="precio" id="" min="10" max="200" step="1" value="100"><br>
+         <label for="date">Fecha</label>
+         <input type="date" name="date" id=""><br>
          <input type="submit", value="Enviar">
+        </form><br>
+
+        <a href="../../cursoweb/index.html">Index</a>
 
     </section>
 </body>
