@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="ejercicio1.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <h1>Contacto</h1>         
+    </header>
+    <p>Esta es la página web de inicio de nuestro sitio web de ejemplo.</p>
+    <form action="./ejercicio1.php" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="Sexo">Sexo:</label><br><br>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="masculino">Femenino</label>
+        <input type="radio" id="otros" name="sexo" value="otros" required>
+        <label for="masculino">Otros</label><br><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" required><br><br>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha" required><br><br>
+
+        <label>Medio de transporte:</label>
+        <input type="checkbox" name="transporte" id="coche" value="coche">
+        <label for="coche">Coche</label>
+        <input type="checkbox" name="transporte" id="moto" value="moto">
+        <label for="moto">Moto</label>
+        <input type="checkbox" name="transporte" id="bici" value="bici">
+        <label for="bici">Bicicleta</label>
+        <input type="checkbox" name="transporte" id="otroTransporte" value="otro">
+        <label for="otroTransporte">Otro</label><br><br>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" rows="4" required></textarea><br><br>
+        
+        <label for="archivo">Archivo adjunto:</label>
+        <input type="file" name="archivo" id="archivo"><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
