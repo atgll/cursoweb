@@ -1,4 +1,6 @@
 <?php
-    print_r($_POST);
-    var_dump($_POST);
+    // print_r($_POST);
+    echo "<pre>";
+    var_export($_REQUEST);
+    echo "</pre>";
 ?>
