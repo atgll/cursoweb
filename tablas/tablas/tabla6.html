@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav><a href="../index.html">Indice</a> <a href="../tablas/tabla4.html">Tabla 4</a></nav>
+
+
+    <table border="1">
+        <caption>Tabla simple</caption>
+
+        <thead>
+            <tr>
+                <th>Col a</th>
+                <th>Col b</th>
+                <th>Col c</th>
+                <th>Col d</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Fil 1</th>
+                <td>Cel b1</td>
+                <td>Cel c1</td>
+                <td>Cel d1</td>
+            </tr>
+            <tr>
+                <th>Fil 2</th>
+                <td>Cel b2</td>
+                <td>Cel c2</td>
+                <td>Cel d2</td>
+            </tr>
+            <tr>
+                <th>Fil 3</th>
+                <td>Cel b3</td>
+                <td>Cel c3</td>
+                <td>Cel d3</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>            
+        </tfoot>
+    </table><br><br>
+
+    <table border="1">
+        <caption>Tabla combinada</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2"></th>
+                <th rowspan="2">Columna 1</th>
+                <th colspan="2">Columna 2</th>
+            </tr>
+            <tr>
+                <th>Columna 2a</th>
+                <th>Columna 2b</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2">Fila 1</th>
+                <th>Fila 1a</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <th>Fila 1b</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+            <tr>
+                <th colspan="2">Fila 2</th>
+                <td>123</td>
+                <td>456</td>
+                <td>789</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>            
+        </tfoot>
+    </table><br><br>
+
+    <table border="1">
+        <caption>Gasto doméstico Primer Semestre</caption>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col style="text-align: center;">
+            </colgroup>
+        <thead style="margin: 1px;">
+            <tr>
+                <th rowspan="2">Mes</th>
+                <th colspan="4">concepto</th>
+                <th rowspan="2" style="text-align: center;">Total</th>
+            </tr>
+            <tr>
+                <th>Corriente</th>
+                <th>Facturas</th>
+                <th>Coche</th>
+                <th>Casa</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Enero</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+            <tr>
+                <th>Febrero</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+            <tr>
+                <th>Marzo</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+            <tr>
+                <th>Abril</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+            <tr>
+                <th>Mayo</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+            <tr>
+                <th>Junio</th>
+                <td>-</td>
+                <td>---</td>
+                <td>----</td>
+                <td>----</td>
+                <td style="text-align: center;">----</td>
+            </tr>
+        </tbody>
+        
+        <tfoot style="margin: 1px;">     
+            <tr>
+                <th rowspan="2">Totales</th>
+                <td style="text-align: center;">---</td>
+                <td style="text-align: center;">---</td>
+                <td style="text-align: center;">---</td>
+                <td style="text-align: center;">---</td>
+                <td style="text-align: center;">---</td> 
+            </tr>
+            <tr>
+                <th style="text-align: center;">Coriente</th>
+                <th style="text-align: center;">Facturas</th>
+                <th style="text-align: center;">Coche</th>
+                <th style="text-align: center;">Casa</th>
+                <th style="text-align: center;">TOTAL</th>
+            </tr>       
+        </tfoot>
+    </table>
+</body>
+</html>

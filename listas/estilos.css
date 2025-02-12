@@ -1,0 +1,28 @@
+.montserrat-fina {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: bold;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 60%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+}
+
+tr td:hover {
+    background-color: rgb(195, 221, 243);
+}
