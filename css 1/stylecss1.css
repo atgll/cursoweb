@@ -21,6 +21,12 @@ p {
 
 .especial {
     background: #FFCC99;
+    border: 1px solid #FF9900;
+    padding: .1em;
+}
+
+#normal span {
+    font-weight: bold;
 }
 
 
