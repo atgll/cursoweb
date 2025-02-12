@@ -15,39 +15,48 @@
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <a href="#">Odit, <em>nostrum</em> ex</a>. Distinctio beatae quam placeat magnam culpa ea similique? Laboriosam, nam. <span class="destacado">Repellendus possimus</span> aliquam fugiat veniam dignissimos, repellat dolores sit?</p>
 
-    <table summary:"Descripción de la tabla y su contenido">
+    <table summary="Descripción de la tabla y su contenido">
         <caption>Título de la tabla</caption>
     <thead>
         <tr>
-            <th></th>
-            <th>Título columna 1</th>
-            <th>Título columna 2</th>
+            <th scope="col"></th>
+            <th scope="col">Título columna 1</th>
+            <th scope="col">Título columna 2</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Título fila 1</th>
+            <th scope="row" class="especial">Título fila 1</th>
             <td>Lorem ipsum purus</td>
             <td>eum obcaecati nemo</td>
         </tr>
         <tr>
-            <th>Título fila 2</th>
-            <td>Lorem ipsum purus</td>
+            <th scope="row">Título fila 2</th>
+            <td>Lorem <strong>ipsum purus</strong></td>
             <td>eum obcaecati nemo</td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
-            <th></th>
-            <th>Título columna 1</th>
-            <th>Título columna 2</th>
+            <th scope="col"></th>
+            <th scope="col">Título columna 1</th>
+            <th scope="col">Título columna 2</th>
         </tr>
-    </tfoot>
+    </tfoot>  
     </table>
 
+    <div id="adicional">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id pariatur vel nisi sunt, <span>soluta molestiae temporibus qui accusamus?</span> Eveniet esse ea delectus nisi voluptas veniam architecto quod officia eius necessitatibus.</p>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim, nulla tempore ex cum delectus mollitia voluptas maiores quidem vero nisi doloribus, <span id="especial">porro suscipit minima esse et adipisci</span> asperiores accusamus.
+        Non rerum mollitia nihil reiciendis commodi sit libero cum magni, iste veritatis officiis iure tenetur, sunt necessitatibus blanditiis ut maiores sequi recusandae modi? Eum, deleniti nesciunt quibusdam voluptates facere id!</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Similique accusantium assumenda sed natus.</a> Rem velit obcaecati quibusdam quos asperiores, perspiciatis ullam neque vero laudantium consequatur. Ratione voluptas neque corporis sed.</p>
+    </div><br><br><br>
 
-
-<div></div><br><br><br>
-    <a href="index.html">Ejercicio CSS 1</a>
+<footer>
+    <a href="index.html">Ejercicio CSS 1</a><a href="ejercicio3.html">Ejercicio CSS 3</a>
+</footer>
+   
 </body>
 </html>
