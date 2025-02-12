@@ -1,0 +1,26 @@
+* {
+    font: lem/1.3 Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #CC3300;
+}
+
+p {
+    color: #555;
+}
+
+#primero p {
+    color: #336699;
+}
+
+#primero em {
+    background: #FFFFCC;
+    padding: .1em;
+}
+
+.especial {
+    background: #FFCC99;
+}
+
+
