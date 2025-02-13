@@ -20,30 +20,42 @@ img {
 #contenedor {
     width: 90%;
     max-width: 900px;
-    width: expression(document.body.clientWidth > 901? "900px": "auto");
     margin: 0;
 }
 
 #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
     border: 2px solid #777;
+    padding: .5em;
 }
 
 #cabecera {
     clear: both;
+    padding: 1em;
 }
 
 #menu {
     clear: both;
+    margin-bottom: .5em;
 }
 
 #lateral {
     float: left;
     width: 20%;
+    padding: 0;
+}
+
+#lateral #publicidad {
+    margin-top: 1em;
+}
+
+#contenido {
+    display: inline;
+    width: 77%;
+    padding: 0;
 }
 
 #contenido #princial {
-    float: left;
-    width: 78%;
+    width: 73%;
 }
 
 #contenido #secundario {
@@ -52,6 +64,8 @@ img {
 }
 
 #pie {
+    padding: .5em 0;
+    margin-top: 1em;
     clear: both;
 }
 
@@ -67,16 +81,21 @@ img {
 
 /*Menú*/
 
-#menu ul #menu_principal li {
+#menu #menu_principal li {
     display: inline;
     float: left;
 }
 
 /*Sección principal*/
 
+#contenido #principal .articulo {
+    margin-bottom: 1em;
+}
+
 #contenido #principal .articulo img {
     width: 100px;
     float: left;
+    margin: .5em;
 }
 
 /*Pie de pagina*/
