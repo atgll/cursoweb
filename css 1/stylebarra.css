@@ -1,0 +1,40 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Muli";
+    color: #848892;
+    background-color: #fff;
+    font-size: 15px;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+#topbar {
+    font-size: 16px;
+    color: #e5e3e3;
+    margin: 0;
+    background: #86a0b6;
+}
+
+h2 {
+    display: none;
+    color: #002642;
+    font-family: "Futura PT";
+    font-weight: 600;
+    font-size: calc(1.325rem + .9vw);
+}
+
+#container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
