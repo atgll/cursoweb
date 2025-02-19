@@ -3,6 +3,10 @@ html {
     padding: 0;
 }
 
+img {
+    width: 100%;
+}
+
 :root  {
     font-family: "Muli";
 }
@@ -188,3 +192,4 @@ ul {
     color: #232f4b;
     font-weight: normal;
 }
+
