@@ -1,0 +1,345 @@
+/*Estilos globales*/
+:root {
+    --column-width: 8.333333333%;
+    --black: #000000;
+    --white: #FFFFFF;
+    --pink: #FA64B5;
+    --green: #A3EA71;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+input {
+    background: unset;
+    border: unset;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    margin: 0.3rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/*fonts*/
+
+.asap-titlexl {
+    font-family: "Asap", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 125;
+}
+
+.asap-title {
+    font-family: "Asap", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.asap-boton {
+    font-family: "Asap", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 125;
+}
+
+.asap-normal {
+    font-family: "Asap", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+/*Rejilla*/
+
+.contenedor-fluido {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-960 {
+    width: 960px;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+/*utilidades*/
+
+.pad-0 {
+    padding: 0;
+}
+
+.pad-02 {
+    padding: 0.2rem;
+}
+
+.pad-05 {
+    padding: 0.5rem;
+}
+
+.pad-08 {
+    padding: 0.8rem;
+}
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.pad-12 {
+    padding: 1.2rem;
+}
+
+.padbtm-0 {
+    padding-bottom: 0;
+}
+
+.padbtm-02 {
+    padding-bottom: 0.2rem;
+}
+
+.padbtm-05 {
+    padding-bottom: 0.5rem;
+}
+
+.padbtm-08 {
+    padding-bottom: 0.8rem;
+}
+
+.padbtm-1 {
+    padding-bottom: 1rem;
+}
+
+.padbtm-12 {
+    padding-bottom: 1.2rem;
+}
+
+.ctext {
+    text-align: center;
+}
+
+.dt {
+    text-align: center;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.despcol1 {
+    margin-left: calc(--column-width);
+}
+
+.despcol2 {
+    margin-left: calc(--column-width*2);
+}
+
+.despcol3 {
+    margin-left: calc(--column-width*3);
+}
+
+.despcol4 {
+    margin-left: calc(--column-width*4);
+}
+
+.despcol5 {
+    margin-left: calc(--column-width*5);
+}
+
+.despcol6 {
+    margin-left: calc(--column-width*6);
+}
+
+.despcol7 {
+    margin-left: calc(--column-width*7);
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.radiusbig {
+    border-radius: 20px;
+}
+
+.radiusxl {
+    border-radius: 50%;
+}
+
+.radient {
+    background: radial-gradient(var(--pink), var(--green))
+}
+
+[class*="column"] {
+    box-sizing: border-box;
+    float: left;
+    width: var(--column-width);
+    min-width: 0;
+    min-height: 1px;
+    padding: 0.1rem;
+}
+
+.cenc {
+    margin: 0 auto;
+    float: none !important;
+}
+
+/*Columnas por ¡¡defecto para moviles!!, menos de 576px*/
+
+.column1 {
+    width: var(--column-width);
+}
+
+.column2 {
+    width: calc(var(--column-width)*2);
+}
+
+.column3 {
+    width: calc(var(--column-width)*3);
+}
+
+.column4 {
+    width: calc(var(--column-width)*4);
+}
+
+.column5 {
+    width: calc(var(--column-width)*5);
+}
+
+.column6 {
+    width: calc(var(--column-width)*6);
+}
+
+.column7 {
+    width: calc(var(--column-width)*7);
+}
+
+.column8 {
+    width: calc(var(--column-width)*8);
+}
+
+.column9 {
+    width: calc(var(--column-width)*9);
+}
+
+.column10 {
+    width: calc(var(--column-width)*10);
+}
+
+.column11 {
+    width: calc(var(--column-width)*11);
+}
+
+.column12 {
+    width: calc(var(--column-width)*12);
+}
+
+/*Componentes*/
+
+.titlexl {
+    text-shadow: 1px 1px 2px var(--pink);
+    color: var(--black);
+    font-size: 7rem;
+    text-decoration: var(--green) wavy underline;
+    /*margin: 1.2rem;*/
+}
+
+.title {
+    text-shadow: 1px 1px 2px var(--green);
+    color: var(--black);
+    font-size: 3rem;
+    text-decoration: underline dotted var(--green);
+    margin: 1.2rem;
+}
+
+.boton1 {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--green);
+    box-shadow: 10px 10px 15px var(--pink);
+    margin: 10px;
+}
+
+.boton2 {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--pink);
+    box-shadow: 10px 10px 15px var(--green);
+    margin: 10px;
+}
+
+.botonlit {
+    font-size: 1rem;
+    padding:0.2rem 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--pink);
+    box-shadow: 10px 10px 15px var(--green);
+    margin: 0 3px;
+}
+
+.text {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.input {
+    border-radius: 5px;
+    background:none;
+    border: 2px solid var(--black);
+}
