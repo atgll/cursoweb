@@ -285,18 +285,17 @@ img {
 /*Componentes*/
 
 .titlexl {
-    text-shadow: 1px 1px 2px var(--pink);
+    text-shadow: 1px 1px 2px var(--pink),-1px -1px var(--green);
     color: var(--black);
     font-size: 7rem;
     text-decoration: var(--green) wavy underline;
-    /*margin: 1.2rem;*/
 }
 
 .title {
-    text-shadow: 1px 1px 2px var(--green);
+    text-shadow: 1px 1px 2px var(--green), -1px -1px var(--pink);
     color: var(--black);
     font-size: 3rem;
-    text-decoration: underline dotted var(--green);
+    /*text-decoration: underline dotted var(--green);*/
     margin: 0 auto;
 }
 
@@ -309,8 +308,26 @@ img {
     text-align: center;
     color: var(--black);
     background-color: var(--green);
-    box-shadow: 10px 10px 15px var(--pink);
+    box-shadow: 10px 10px 15px var(--pink), -1px -1px 2px var(--white);
     margin: 10px;
+}
+
+.boton1:hover {
+    box-shadow: -2px -2px 15px var(--pink), -1px -1px 2px var(--white);
+    transition: 0s;
+}
+
+.boton1:active{
+    transform:scale(0.9, 0.9);
+}
+
+.boton2:hover {
+    box-shadow: -2px -2px 15px var(--green), -1px -1px 2px var(--white);
+    transition: 0s;
+}
+
+.boton2:active{
+    transform:scale(0.9, 0.9);
 }
 
 .boton2 {
@@ -322,11 +339,14 @@ img {
     text-align: center;
     color: var(--black);
     background-color: var(--pink);
-    box-shadow: 10px 10px 15px var(--green);
+    box-shadow: 10px 10px 15px var(--green), -1px -1px 2px var(--white);
     margin: 10px;
 }
 
+.boton
+
 .boton3 {
+    text-shadow: 1px 1px 2px var(--green);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 1.2rem;
@@ -334,7 +354,7 @@ img {
     text-align: center;
     color: var(--black);
     background-color: var(--pink);
-    box-shadow: 10px 10px 15px var(--green);
+    box-shadow: 10px 10px 15px var(--green), -1px -1px 2px var(--white);
     margin:0;
 }
 
@@ -377,9 +397,10 @@ img {
 
 .calendario{
     float: left;
-    border: 5px dashed var(--green);
+    /*border: 5px double var(--green);*/
     position: relative;
-    top: 1.2rem;
+    top: 1.1rem;
+    left: 5rem;
 }
 
 .semana {
@@ -387,7 +408,21 @@ img {
     
 }
 
+.nombres-dias{
+    text-shadow: 1px 1px 2px var(--green);
+    width: 5rem;
+    text-align: justify;
+    text-align: center;
+    display: inline;
+    border: 2px solid black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
+    background-color: var(--pink);
+    background:  radial-gradient(var(--pink), var(--green));
+}
 .dia {
+    text-shadow: 1px 1px 2px var(--green);
     cursor: pointer;
     width: 5rem;
     text-align: justify;
@@ -396,18 +431,42 @@ img {
     border: 2px solid black;
     padding: 1rem;
     font-size: 1.5rem;
-    background:  radial-gradient(var(--pink), var(--green));
-    margin: 1px;
+    margin: 0;
+    background-color: var(--pink);
 }
 
-.semana .dia:first-child {
-    margin-left: 5.3rem;
+.dia:hover{
+    background:  radial-gradient(var(--pink), var(--green));
+    
+
+}
+
+.nombres-dias:first-child {
+    margin-left: 18px;
+}
+
+.dia:first-child {
+    margin-left: 18px;
 }
 
 #barrainfo {
     z-index: 10;
-    position: sticky;
     position: -webkit-sticky;
     top: 0.1px;
     float: left;
+}
+
+.mes {
+    width: 90%;
+    margin-left: 18px;
+}
+
+.separacion {
+    padding: 1.2rem;
+}
+
+#pagarbtn {
+    position: relative;
+    top: 10rem;
+    left: 6rem;
 }
