@@ -19,6 +19,12 @@ input {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 i {
@@ -388,196 +394,78 @@ img {
 
 }
 
-/*Componentes*/
 
-.titlexl {
-    text-shadow: 1px 1px 2px var(--pink),-1px -1px var(--green);
-    color: var(--black);
-    font-size: 7rem;
-    text-decoration: var(--green) wavy underline;
+.contacto {
+    font-family: "Oswald", sans-serif;
+    background-color: #0e3102;
+    color: white;
+    font-size: 0.8rem;
 }
 
-.title {
-    text-shadow: 1px 1px 2px var(--green), -1px -1px var(--pink);
-    color: var(--black);
-    font-size: 3rem;
-    /*text-decoration: underline dotted var(--green);*/
-    margin: 0 auto;
+.iconos {
+    float: right;
+    margin: 0.2rem;
 }
 
-.boton1 {
-    text-shadow: 1px 1px 2px var(--pink);
+.iconos i {
+    padding: 5px 5px;
+    background-color: rgb(238, 212, 61);
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.contactos {
+    margin: 5px;
+}
+
+.botoneramenu {
+    text-align: right;
+}
+
+
+.botoneramenu li {
+    display: inline-block;
+}
+
+.boton {
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1.2rem;
-    border-radius: 10px;
-    text-align: center;
-    color: var(--black);
-    background-color: var(--green);
-    box-shadow: 10px 10px 15px var(--pink), -1px -1px 2px var(--white);
-    margin: 10px;
-}
-
-.boton1:hover {
-    box-shadow: -2px -2px 15px var(--pink), -1px -1px 2px var(--white);
-    transition: 0s;
-}
-
-.boton1:active{
-    transform:scale(0.9, 0.9);
-}
-
-.boton2:hover {
-    box-shadow: -2px -2px 15px var(--green), -1px -1px 2px var(--white);
-    transition: 0s;
-}
-
-.boton2:active{
-    transform:scale(0.9, 0.9);
-}
-
-.boton2 {
-    text-shadow: 1px 1px 2px var(--green);
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1.2rem;
-    border-radius: 10px;
-    text-align: center;
-    color: var(--black);
-    background-color: var(--pink);
-    box-shadow: 10px 10px 15px var(--green), -1px -1px 2px var(--white);
-    margin: 10px;
-}
-
-.boton
-
-.boton3 {
-    text-shadow: 1px 1px 2px var(--green);
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 1.2rem;
-    border-radius: 10px;
-    text-align: center;
-    color: var(--black);
-    background-color: var(--pink);
-    box-shadow: 10px 10px 15px var(--green), -1px -1px 2px var(--white);
-    margin:0;
-}
-
-.botonlit {
-    cursor: pointer;
-    font-size: 1rem;
-    padding:0.2rem 0.5rem;
-    border-radius: 5px;
-    text-align: center;
-    color: var(--black);
-    background-color: var(--pink);
-    box-shadow: 1px 1px 15px var(--green);
-    margin: 0 3px;
-}
-
-.text {
-    font-size: 1rem;
-    color: #000000;
-}
-
-.input {
-    color: var(--white);
-    text-shadow: 1px 1px 2px var(--pink);
-    border-radius: 5px;
-    background: radial-gradient(var(--black)35%, var(--green)100%);
-    border: 2px solid var(--green);
-}
-
-.info {
-    font-size: 1rem;
-    padding: 0.5rem;
-    background-color: var(--black);
-    color: var(--white);
-    text-shadow: 1px 1px 2px var(--pink);
-}
-
-.info p {
-    color: var(--green);
-}
-
-.calendario{
-    float: left;
-    /*border: 5px double var(--green);*/
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    font-weight: 400;
     position: relative;
-    top: -3rem;
-    left: 5rem;
+    font-family: inherit;
+    text-transform: uppercase;
 }
 
-.titlecalendar {
-    position: relative;
-    bottom: 37px;
+.boton:hover {
+    color:  rgb(238, 212, 61);
 }
 
-.semana {
-    padding: 0;
-    
-}
+/*.boton::after {
+    content: "";
+}*/
 
-.nombres-dias{
-    text-shadow: 1px 1px 2px var(--green);
-    width: 5rem;
-    text-align: justify;
+.logo {
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
     text-align: center;
-    display: inline;
-    border: 2px solid black;
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin: 0;
-    background-color: var(--pink);
-    background:  radial-gradient(var(--pink), var(--green));
-}
-.dia {
-    text-shadow: 1px 1px 2px var(--green);
-    cursor: pointer;
-    width: 5rem;
-    text-align: justify;
-    text-align: center;
-    display: inline;
-    border: 2px solid black;
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin: 0;
-    background-color: var(--pink);
 }
 
-.dia:hover{
-    background:  radial-gradient(var(--pink), var(--green));
-    
-
+.contactos {
+    margin-left: 10px;
 }
 
-.nombres-dias:first-child {
-    margin-left: 18px;
+.contactos span {
+    margin-left: 10px;
 }
 
-.dia:first-child {
-    margin-left: 18px;
+.cuerpo {
+    background-image: url(../barrainfo/imgbarra/pexels-imagestudio-4664670.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 
-#barrainfo {
-    z-index: 10;
-    position: -webkit-sticky;
-    top: 0.1px;
-    float: left;
-}
-
-.mes {
-    width: 90%;
-    margin-left: 18px;
-}
-
-.separacion {
-    padding: 1.2rem;
-}
-
-#pagarbtn {
-    position: relative;
-    top: 10rem;
-    left: 6rem;
-}
