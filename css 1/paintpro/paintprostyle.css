@@ -5,6 +5,8 @@
     --white: #FFFFFF;
     --pink: #FA64B5;
     --green: #A3EA71;
+    --iconos-size: 25px;
+
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
@@ -99,7 +101,7 @@ img {
 .row {
     width: 100%;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0rem;
     box-sizing: border-box;
 }
 
@@ -396,6 +398,7 @@ img {
 
 
 .contacto {
+    padding: 0.2rem;
     font-family: "Oswald", sans-serif;
     background-color: #0e3102;
     color: white;
@@ -407,11 +410,21 @@ img {
     margin: 0.2rem;
 }
 
-.iconos i {
-    padding: 5px 5px;
-    background-color: rgb(238, 212, 61);
+.iconos li {
+    display: inline-block;
+    background-color: rgb(196, 199, 52);
     border-radius: 50%;
-    margin-left: 4px;
+    margin-left: 2px;
+    height: var(--iconos-size);
+    width: var(--iconos-size);
+    line-height: var(--iconos-size);
+    text-align: center;
+    color: white;
+}
+
+.iconos li a {
+    text-decoration: none;
+    color: white;
 }
 
 .contactos {
@@ -451,6 +464,7 @@ img {
     font-weight: 800;
     font-size: 2rem;
     text-align: center;
+    padding:0.7rem;
 }
 
 .contactos {

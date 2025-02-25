@@ -1,0 +1,177 @@
+@keyframes opacidad {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes diap1 {
+    12% {
+        opacity: 1;
+        z-index: 0;
+    }
+    16% {
+        opacity: 1;
+        z-index: 0;
+    }
+    17% {
+        opacity: 0.5rem;
+        z-index: -10;
+    }
+    87% {
+        opacity: 1;
+        z-index: -10;
+    }
+    92% {
+        opacity: 1;
+        z-index: -10;
+    }
+    100% {
+        z-index: 0;
+        opacity: 1;
+    }
+}
+@keyframes diap2 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    12% {
+        opacity: 0;
+        z-index: 0;
+    }
+    16% {
+        opacity: 1;
+        z-index: 1;
+    }
+    20% {
+        opacity: 1;
+        z-index: 1;
+    }
+    32% {
+        opacity: 1;
+        z-index: 1;
+    }
+    36% {
+        opacity: 0;
+        z-index: 0;
+    }
+    37% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes diap3 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    32% {
+        opacity: 0;
+        z-index: 0;
+    }
+    36% {
+        opacity: 1;
+        z-index: 1;
+    }
+    40% {
+        opacity: 1;
+        z-index: 1;
+    }
+    52% {
+        opacity: 1;
+        z-index: 1;
+    }
+    56% {
+        opacity: 0;
+        z-index: 0;
+    }
+    57% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+    
+}
+
+@keyframes diap4 {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+    12% {
+        opacity: 0;
+        z-index: 0;
+    }
+    16% {
+        opacity: 1;
+        z-index: 1;
+    }
+    20% {
+        opacity: 1;
+        z-index: 1;
+    }
+    32% {
+        opacity: 1;
+        z-index: 1;
+    }
+    36% {
+        opacity: 0;
+        z-index: 0;
+    }
+    37% {
+        opacity: 0;
+        z-index: 0;
+    }
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.deslizador {
+    height: 70vh;
+    position: relative;
+}
+
+.deslizador .diapositiva {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+}
+
+.deslizador .diapositiva img {
+    object-fit: cover;
+    height: 70vh;
+}
+
+.diapositivas .dia1 {
+    z-index: 0;
+    animation: diap1 25s linear infinite;
+}
+
+.diapositivas .dia2 {
+    z-index: -1;
+    animation: diap2 25s linear infinite;
+}
+
+.diapositivas .dia3 {
+    z-index: -2;
+    animation: diap3 25s linear infinite;
+}
+
+.diapositivas .dia4 {
+    z-index: -3;
+    animation: diap4 25s linear infinite;
+}

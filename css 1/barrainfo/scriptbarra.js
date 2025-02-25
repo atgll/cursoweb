@@ -12,16 +12,6 @@ homeButton.addEventListener("mouseout", function () {
 })
 
 
-$(document).ready(function () {
-    $('.slidelove').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
-});
-
 /*const numbers = [1, 2, 3, 4, 5]
 
 const evenNumbers = numbers.filter(function(number){

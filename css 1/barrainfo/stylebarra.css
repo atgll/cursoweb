@@ -83,11 +83,12 @@ ul {
 }
 
 #menu {
+    z-index: 12;
     /*margin: 0 5rem 0 5rem;*/
     float: right;
     width: 100%;
     font-size: 16px;
-    padding: 35px 20px;
+    padding: 12px 20px;
     display: block;
     color: #232f4b;
     font-weight: 600;
@@ -101,6 +102,9 @@ ul {
 }
 
 #logo{
+    top: 21px;
+    position: relative;
+    margin: 0 5rem;
     margin: 0 3rem;
     float: left;
     width: 160px;
