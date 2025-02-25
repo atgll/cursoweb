@@ -95,6 +95,7 @@ ul {
     position: relative;
     font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
     text-transform: uppercase;
+    box-shadow: rgba(255, 255, 255, 1) 0px 30px 25px -10px;
 }
 
 #menu p {
