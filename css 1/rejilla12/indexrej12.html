@@ -38,13 +38,13 @@
                 <p class="column12 scolumn12 mcolumn3 ctext title asap-title pad-12"></p>
             </div>
             <div class="row">
-                <section class="column12 scolumn12 mcolumn3 ctext">
-                    <p class="boton1 asap-boton">Lima</p>
-                    <p class="boton2 asap-boton">Chocolate</p>
-                    <p class="boton1 asap-boton">Limón</p>
-                    <p class="boton2 asap-boton">Fresa</p>
-                    <p class="boton1 asap-boton">Nata</p>
-                    <p class="boton2 asap-boton">Stracciatella</p>
+                <section class="column12 scolumn12 mcolumn3 ctext" id="sabores">
+                    <p class="boton1 asap-boton btnsabor" id="lima">Lima</p>
+                    <p class="boton2 asap-boton btnsabor" id="chocolate">Chocolate</p>
+                    <p class="boton1 asap-boton btnsabor" id="limon">Limón</p>
+                    <p class="boton2 asap-boton btnsabor" id="fresa">Fresa</p>
+                    <p class="boton1 asap-boton btnsabor" id="nata">Nata</p>
+                    <p class="boton2 asap-boton btnsabor" id="straciatela">Stracciatella</p>
                 </section>
                 <section class="column12 scolumn12 mcolumn5 calendario">
                     <div class="row">
@@ -115,10 +115,45 @@
                 <p class="column3 boton1 asap-boton" id="pagarbtn">Ya estaría <i class="fa-solid fa-basket-shopping"></i></p>
             </div>
         </div>
-        <div class="contenedor-fluido pago">
-            <form action="./script/" method="post" class="row">
-                <h2 class="column12 mcolummn12 titulo-pago title"></h2>
-            </form>
+        <div class="contenedor-fluido" id="pago">
+            <div class="row">
+                <h2 class="column12 mcolummn12 titulo-pago title asap-title info pad-12">Pago</h2>
+            </div>
+            <div class="clear"></div>
+            <div class="row info">
+                <form action="./script/form12.php" method="post" class="column6 info text cenc" id="formpago">
+                    <p class="row info">
+                        <label class="column4 text asap-normal info cenc" for="listasabores">Sabores</label>
+                        <input type="text" required class="column8 input text asap-normal cenc" name="listasabores" id="resumen">
+                    </p>
+                    <p class="row info">
+                        <label class="column4 text asap-normal info cenc" for="orderdate">Fecha</label>
+                        <input type="text" required class="column8 input text asap-normal cenc" name="orderdate" id="orderdate">
+                    </p>
+                    <p class="row info">
+                        <label class="column4 text asap-normal info cenc" for="user">Usuario</label>
+                        <input type="text" required class="column8 input text asap-normal cenc" name="user" id="user">
+                    </p>
+                    <p class="row info">
+                        <label class="column4 text asap-normal info cenc" for="mail">Mail</label>
+                        <input type="text" required class="column8 input text asap-normal cenc" name="mail" id="mail">
+                    </p>
+                    <p class="row info">
+                        <p class="column12 text asap-normal info pad-1">Forma de pago</p>
+                        <label class="column3 text asap-normal info cenc" for="tarjeta">Tarjeta</label>
+                        <input type="radio" required class="column3 input text asap-normal cenc" name="paytype" id="tarjeta" value="tarjeta">
+                        <label class="column3 text asap-normal info cenc" for="efectivo">Efectivo</label>
+                        <input type="radio" required class="column3 input text asap-normal cenc" name="paytype" id="efectivo" value="efectivo">
+                    </p>
+                    <p class="row info">
+                        <label class="column4 text asap-normal info cenc" for="cardnum">Num. Tarjeta</label>
+                        <input type="text" required class="column8 input text asap-normal cenc" name="cardnum" id="cardnum">
+                    </p>
+                    <p class="row info">
+                        <input type="submit" value="Pagar" class="column4 boton1 asap-boton cenc" id="pagar">
+                    </p>
+                </form>
+            </div>    
         </div>
     </div>
     <script src="https://kit.fontawesome.com/bcf25a6078.js" crossorigin="anonymous"></script>

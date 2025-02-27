@@ -1,0 +1,108 @@
+:root {
+    --ocre: #B9935A;
+    --dorado: #C97E28;
+    --tostado: #823A3F;
+    --negro: #170101;
+    --white: #ebe3cf;
+}
+
+.header {
+    padding: 0;
+}
+
+.fondo-oscuro {
+    background-color: var(--negro);
+    color: var(--white);
+    float: left;
+    padding: 0;
+}
+
+.fondo-oscuro p {
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.fondo-oscuro a {
+    color: var(--white);
+    margin: 0 10px;
+
+}
+
+.logo {
+    width: 150px;
+}
+
+.rowtitle {
+    height: 163px;
+}
+
+
+
+.contenedor {
+    background-image: url(../sources/images/arte-rupestre_1_621x621.jpeg);
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-size:auto;
+    background-repeat: none;
+    background-position: left center;
+    z-index: -2;
+    animation: kenburns 18s ease-in-out alternate infinite;
+}
+
+@keyframes kenburns {
+
+    0% {
+        background-size: 115%;
+        background-position: left center;
+    }
+
+    66% {
+        background-size: 115%;
+        background-position: right center;
+    }
+
+    100% {
+        background-size: 100%;
+        background-position: center top;
+    }
+    
+}
+
+
+.encabezado {
+    padding: 24px;
+    font-family: 'Quarrystone';
+    font-size: 6rem;
+    color: var(--negro);
+    box-shadow: inset 0px 0px 25px 15px rgb(23, 1, 1);
+}
+
+.subencabezado {
+    padding: 24px;
+    font-family: 'Quarrystone';
+    font-size: 3rem;
+    color: var(--white);
+    text-shadow: 1px 2px 5px var(--dorado);
+}
+
+.menu {
+    background-color: rgba(235, 210, 146, 0.40);
+    backdrop-filter: blur(2px);
+}
+
+.menulist li {
+    padding: 0.5rem;
+}
+
+.menulist li a {
+    color: #170101;
+    font-weight: 600;
+}
+
+.custom-shape-divider-001 {
+    position: relative;
+    /* height: min-content; */
+    overflow: hidden;
+    bottom: 65px;
+}

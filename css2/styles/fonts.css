@@ -1,0 +1,50 @@
+:root {
+    --ocre: #B9935A;
+    --dorado: #C97E28;
+    --tostado: #823A3F;
+    --negro: #170101;
+    --white: #ebe3cf;
+}
+
+@font-face {
+    font-family: 'Quarrystone 3D';
+    src: url(../sources/fonts/quarrystone3d.ttf) format(true-type);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Quarrystone';
+    src: url(../sources/fonts/quarrystone.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.merienda-titlexl {
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.merienda-title {
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.merienda-text {
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.vollkorn-text {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
