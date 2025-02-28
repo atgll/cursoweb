@@ -1,0 +1,133 @@
+:root {
+    --red: #dc5700;
+}
+.head-main {
+    background: radial-gradient(circle, rgba(134,160,182,0) 27%, rgba(134,160,182,0.7898688580482416) 88%);
+}
+
+.imagen {
+    background-image: url(../sources/images/pexels-joseph-phillips-2044494-3753820.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 15% ;
+    background-size: cover;
+}
+
+.infobar {
+    float: left;
+}
+
+
+.botonera-menu li {
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+}
+
+.botonera-menu li:last-child {
+    background-color: #000000;
+}
+
+
+
+.boton {
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.boton a {
+    color: wheat;
+}
+
+@media (min-width: 960px) {
+    .boton a {
+        color: #000000;
+    }
+}
+
+.botonera-menu li:last-child a {
+    color: white;
+}
+
+
+.boton:hover {
+    color: #86a0b6;
+    border-bottom: solid 4px #86a0b6;
+    transition: 0.3s;
+}
+
+.logo-menu img {
+    width: 125px;
+    position: relative;
+    top: 9px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.content-head {
+    text-align: auto;
+    width: 100%;
+}
+
+.typo {
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+}
+
+.title-main {
+    font-size: 3rem;
+    margin: 0 auto;
+    margin: 20px;
+    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+}
+
+.loc-main {
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.tarjetero {
+    background: rgb(220,87,0);
+background: linear-gradient(0deg, rgba(220,87,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.fila-tarjetas {
+    margin-top: 35px;
+}
+
+@media (min-width: 960px) {
+    .fila-tarjetas .tarjeta:first-child{
+        margin-left: 130px !important;
+    }
+
+}
+
+.tarjeta {
+    background-color: #000000;
+    margin: 25px 7px 5px 5px;
+
+}
+
+.tarjeta-imagen {
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+    
+
+}
+
+.tarjeta-titulo {
+    color: wheat;
+    text-decoration: underline var(--red);
+    font-weight: 700;
+    padding: 10px;
+}
+
+.tarjeta-text {
+    color: wheat;
+    padding: 10px;
+    font-size: 0.8rem;
+}
