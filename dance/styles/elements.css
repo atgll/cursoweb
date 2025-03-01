@@ -1,15 +1,17 @@
 :root {
     --red: #dc5700;
 }
-.head-main {
-    background: radial-gradient(circle, rgba(134,160,182,0) 27%, rgba(134,160,182,0.7898688580482416) 88%);
-}
 
 .imagen {
     background-image: url(../sources/images/pexels-joseph-phillips-2044494-3753820.jpg);
     background-repeat: no-repeat;
     background-position: 50% 15% ;
     background-size: cover;
+    
+}
+
+.separation {
+    background-color: #000000;
 }
 
 .infobar {
@@ -53,8 +55,8 @@
 
 
 .boton:hover {
-    color: #86a0b6;
-    border-bottom: solid 4px #86a0b6;
+    text-shadow: 1px 1px 2px wheat, -1px -1px 1px var(--red);
+    border-bottom: solid 2px var(--red);
     transition: 0.3s;
 }
 
@@ -73,14 +75,20 @@
 
 .typo {
     margin: 0 auto;
-    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+    text-shadow: 1px 1px 2px wheat, -1px -1px 1px var(--red);
 }
 
 .title-main {
     font-size: 3rem;
     margin: 0 auto;
     margin: 20px;
-    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+    text-shadow: 1px 1px 2px wheat, -1px -1px 1px var(--red);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-shadow: 1px 1px 2px wheat, -1px -1px 1px var(--red);
 }
 
 .loc-main {
@@ -89,8 +97,17 @@
 }
 
 .tarjetero {
-    background: rgb(220,87,0);
-background: linear-gradient(0deg, rgba(220,87,0,1) 0%, rgba(0,0,0,1) 100%);
+    background: var(--red);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, var(--red) 100%);
+}
+
+.instructor-presentation {
+    background: var(--red);
+    background: linear-gradient(0deg, var(--red) 0%, rgba(0,0,0,1) 100%);
+}
+
+.instructor-presentation>p {
+    padding: 15px;
 }
 
 .fila-tarjetas {
@@ -100,6 +117,10 @@ background: linear-gradient(0deg, rgba(220,87,0,1) 0%, rgba(0,0,0,1) 100%);
 @media (min-width: 960px) {
     .fila-tarjetas .tarjeta:first-child{
         margin-left: 130px !important;
+    }
+
+    .fila-tarjetas .tarjeta-instructores:first-child{
+        margin-left: 175px !important;
     }
 
 }
@@ -114,7 +135,7 @@ background: linear-gradient(0deg, rgba(220,87,0,1) 0%, rgba(0,0,0,1) 100%);
     margin-top: 25px;
     padding: 10px;
     font-size: 2.3rem;
-    text-shadow: 1px 1px 2px wheat, -1px -1px 2px rgb(220, 87, 0);
+    text-shadow: 1px 1px 2px wheat, -1px -1px 2px var(--red);
     
 
 }
@@ -131,3 +152,78 @@ background: linear-gradient(0deg, rgba(220,87,0,1) 0%, rgba(0,0,0,1) 100%);
     padding: 10px;
     font-size: 0.8rem;
 }
+
+.tarjeta-imagen-instructores {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.tarjeta-imagen-instructores img {
+    
+    overflow: hidden;
+}
+
+.tarjeta-instructores {
+    background-color: #000000;
+    margin: 25px 0px 0px 0px;
+}
+
+.prices {
+    background-color: #000000;
+}
+
+.price-table {
+    padding: 1rem;
+    border-left: 1px solid var(--red);
+}
+
+.price-table th {
+    padding: 1rem;
+    color: var(--red);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.price-table td {
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.price-table th td {
+    padding: 1rem;
+}
+
+.row-map {
+    background-color: #000000;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.titulo-mapa {
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.imagen-despedida {
+    background-image: url(../sources/images/pexels-joseph-phillips-2044494-3753820.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 85% ;
+    background-size: cover;
+    
+}
+
+
