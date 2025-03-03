@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACT</title>
 </head>
 
 <body>
@@ -28,9 +28,9 @@
                     <div class="column12 mcolumn8 pcolumn8 ctext">
                         <div class="row">
                             <ul class="column12 uppercase botonera-menu roboto-bold">
-                                <li class="boton"><a href="./index.html">home</a></li>
+                                <li class="boton"><a href="./index.php">home</a></li>
                                 <li class="boton"><a href="#!">pricing</a></li>
-                                <li class="boton"><a href="./instructores.html">instructors <i
+                                <li class="boton"><a href="./instructoresdeslizador.html">instructors <i
                                             class="bi bi-caret-down"></i></a></li>
                                 <li class="boton"><a href="#!">partners</a></li>
                                 <li class="boton"><a href="./nosotros.html">pages <i class="bi bi-caret-down"></i></a>
@@ -45,7 +45,7 @@
                 <section class="row content-head">
                     <div class="column8 typo despcol1">
                         <div class="row">
-                            <h1 class="column12 uppercase title-main roboto-titlexl ctext">contacs</h1>
+                            <h1 class="column12 uppercase title-main roboto-titlexl ctext">contacts</h1>
                         </div>
                         <div class="row">
                             <p class="column12 uppercase loc-main montserrat-normal"><strong>home</strong>·contacts</p>
@@ -55,68 +55,82 @@
             </div>
         </header>
         <div class="clear"></div>
+        <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
         <section class="row tarjetero">
             <div class="column9 cenc">
-                <div class="row fila-tarjetas">
+                <div class="row fila-tarjetas-iconos">
                     <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="fa-regular fa-user"></i></p>
-                        <p class="tarjeta-titulo">Personal Training</p>
-                        <p class="tarjeta-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quis
-                            maiores nemo repellat beatae, adipisci accusantium ratione aliquid perferendis ducimus, rem
-                            voluptas aperiam.</p>
+                        <p class="tarjeta-imagen"><i class="bi bi-telephone-inbound"></i></p>
+                        <p class="tarjeta-titulo">1-800-123-1234</p>
+                        <p class="tarjeta-text">You can all at any time</p>
                     </div>
                     <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="bi bi-boxes"></i></p>
-                        <p class="tarjeta-titulo">Group Training</p>
-                        <p class="tarjeta-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quis
-                            maiores nemo repellat beatae, adipisci accusantium ratione aliquid perferendis ducimus, rem
-                            voluptas aperiam.</p>
+                        <p class="tarjeta-imagen"><i class="bi bi-map"></i></p>
+                        <p class="tarjeta-titulo">51 Francis Street,<br>Darlinghurst NSW 2010,<br>United States</p>
+                        <p class="tarjeta-text"></p>
                     </div>
                     <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="bi bi-speaker"></i></p>
-                        <p class="tarjeta-titulo">Dance Worshops</p>
-                        <p class="tarjeta-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quis
-                            maiores nemo repellat beatae, adipisci accusantium ratione aliquid perferendis ducimus, rem
-                            voluptas aperiam.</p>
+                        <p class="tarjeta-imagen"><i class="fa-regular fa-paper-plane"></i></p>
+                        <p class="tarjeta-titulo">info@fuego.com</p>
+                        <p class="tarjeta-text">Feel free to email us your questions</p>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="clear"></div>
+        <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
+        <div class="clear"></div>
+        <section class="row contact-row">
+            <h2 class="column12 form-title roboto-bold title ctext">Contact Form</h2>
+            <form class="column12 mcolumn4 scolumn4 contact-form cenc ctext" action="./scripts/form.php" method="post">
+                <input type="text" name="name" id="your_name" placeholder="Your Name">
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                <input type="tel" name="tel" id="telephone" placeholder="Phone">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input class="submitbtn" id="submit" type="submit" value="Send">
+            </form>
+        </section>
+        <div class="clear"></div>
+        <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
+        <div class="clear"></div>
         <footer class="row imagen-despedida">
-            <div class="column4 despedida">
-                <div class="row">
-                    <h1 class="column12 title roboto-bold uppercase logo-menu left-align"><img width="25px"
-                            src="./sources/icons/vecteezy_dancer-vector-icon_22459652-removebg-preview.png" alt="">
-                        <br>fuego</h1>
-                    <p class="column12 roboto-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam a
-                        itaque, voluptas laborum provident officiis adipisci maxime et sed perspiciatis aliquid
-                        doloribus non incidunt, iste fugit explicabo minima voluptatem exercitationem?<br>Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Id laudantium blanditiis nobis repudiandae odit.
-                    </p>
-                </div>
+            <div class="column4 despedida texto-despedida">
+                <h3 class="column12 title roboto-bold uppercase left-align logo-head">fuego
+                </h3><img class="logo-footer"
+                    src="./sources/icons/vecteezy_dancer-vector-icon_22459652-removebg-preview.png" alt="">
+                <p class="column12 tarjeta-text roboto-normal text-into-text">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
+                    elit. Veniam a
+                    itaque, voluptas laborum provident officiis adipisci maxime et sed perspiciatis aliquid
+                    doloribus non incidunt, iste fugit explicabo minima voluptatem exercitationem?<br>Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Id laudantium blanditiis nobis repudiandae odit.
+                </p>
             </div>
             <div class="column8 info-login">
-                <form class="row">
-                    <label class="column12 roboto-bold uppercase" for="login">subscribe & stay updated</label>
-                    <input type="email" name="login" placeholder="E-mail"><input type="submit" placeholder="SUBSCRIBE">
+                <form action="./scripts/form.php" method="post" class="column12 scolumn6 mcolumn6 ctext login-form">
+                    <label class="column12 roboto-bold uppercase title" for="login">subscribe & stay updated</label>
+                    <input type="email" name="login" class="column7 cenc" placeholder="E-mail"><input
+                        class="column2 cenc submitbtn" type="submit" value="SUBSCRIBE">
                 </form>
-                <div class="row">
-                    <div class="column6 dir-tel">
-                        <p class="title roboto-bold">ADDRESS & PHONE</p>
-                        <p><i class="bi bi-geo-alt-fill montserrat-normal"></i> di, direccion directa</p>
-                        <p><i class="bi bi-telephone montserrat-normal"></i> +34 968 847 984</p>
-                    </div>
+
+                <div class="column12 mcolumn3 scolumn3 dir-tel">
+                    <p class="title-s roboto-bold">ADDRESS & PHONE</p>
+                    <p class="roboto-normal tarjeta-text"><i class="bi bi-geo-alt-fill"></i> di, direccion directa
+                    </p>
+                    <p class="tarjeta-text roboto-normal"><i class="bi bi-telephone"></i> +34 968 847 984</p>
                 </div>
-                <div class="row">
-                    <div class="column6 social">
-                        <p class="title roboto-bold">GET SOCIAL</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="column12 roboto-normal title"><span class="column4"><i
-                                    class="bi bi-twitter"></i></span><span class="column4"><i
-                                    class="bi bi-instagram"></i></span><span class="column4"><i
-                                    class="fa-brands fa-tiktok"></i></span></p>
-                    </div>
+
+
+                <div class="column12 mcolumn3 scolumn3 social">
+                    <p class="title-s roboto-bold">GET SOCIAL</p>
+                    <p class="tarjeta-text roboto-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="column12 roboto-normal ctext title"><span class="column4"><i
+                                class="bi bi-twitter"></i></span><span class="column4"><i
+                                class="bi bi-instagram"></i></span><span class="column4"><i
+                                class="fa-brands fa-tiktok"></i></span></p>
                 </div>
+
             </div>
         </footer>
     </div>

@@ -2,9 +2,6 @@
     --column-width: 8.333333333%;
 }
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 input {
     background: unset;
     border: unset;
@@ -55,7 +52,7 @@ a {
 .row {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0rem;
     box-sizing: border-box;
 }
 
