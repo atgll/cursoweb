@@ -373,12 +373,19 @@
 
 .row-historia {
     background-color: #000000;
-    padding: 1rem !important;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 @media (min-width:960) {
+
+    .row-historia {
+        background-color: #000000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
     .historia {
         display: flex;
@@ -387,7 +394,6 @@
         align-content: space-around;
         align-items: center;
         gap: 15px;
-
         height: 500px;
         margin: 10px auto;
         padding: 20px;
@@ -500,11 +506,34 @@ footer {
 
 
 @media (min-width:960px) {
-    .imagenes-pag-instructors {
-        position: relative;
-        margin: 15px;
-        bottom: 85px;
-        left: 85px;
+
+    .slides {
+        display: none; /* Ocultar todos los slides por defecto */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        background: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide {
+        width: 100%;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: center;
+        /* overflow: visible; */
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .slide picture {
+        flex-basis: 300px !important;
     }
     
 }
@@ -513,31 +542,100 @@ footer {
     margin: 15px;
 }
 
-.cont-instructores {
-
+/* Estilos generales */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajusta según el diseño */
+    margin: auto;
+    overflow: hidden;
 }
 
-@media (min-width:960) {
-    .cont-instructores {
-        height: 520px;
-        margin: 10px auto;
-        padding: 20px;
-        background-color: black;
-        border-radius: 5px;
-        box-shadow: 0 0 10px var(--red);
-        position: relative;
-        top: 25px;
-    }
+/* Contenedor del slider */
+.slider {
+    display: flex;
+    width: 100%;
+    height: 500px; /* Altura fija para uniformidad */
+    align-items: center;
+    justify-content: center;
 }
 
+
+
+/* Estilo para cada slide */
+.slides {
+    display: none; /* Ocultar todos los slides por defecto */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: visible; */
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* Activo: el slide visible */
+.slides.active {
+    display: block;
+}
+
+/* Imagen dentro del slide */
+.slides picture img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+.tarjeta-text {
+    font-size: 0.8rem;
+    color: whitesmoke;
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Contenedor de los botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Botones del slider */
+.button {
+    background-color: var(--dark-red);
+    color: wheat;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:active {
+    transform: scale(90%);
+}
+
+
 .cont-instructores {
+    background-color: black;
     margin: 10px auto;
     padding: 20px;
-    background-color: black;
     border-radius: 5px;
     box-shadow: 0 0 10px var(--red);
-    position: relative;
-    top: 25px;
 }
 
 .text-into-text {

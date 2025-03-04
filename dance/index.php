@@ -32,7 +32,7 @@
                             <ul class="column12 uppercase botonera-menu roboto-bold">
                                 <li class="boton"><a href="./index.php">home</a></li>
                                 <li class="boton"><a href="#!">pricing</a></li>
-                                <li class="boton"><a href="./instructoresdeslizador.html">instructors <i
+                                <li class="boton"><a href="./instructoresdeslizador.php">instructors <i
                                             class="bi bi-caret-down"></i></a></li>
                                 <li class="boton"><a href="#!">partners</a></li>
                                 <li class="boton"><a href="./nosotros.html">pages <i class="bi bi-caret-down"></i></a>
@@ -94,7 +94,7 @@
             <div class="column9 cenc contenedor-tarjetas">
 
                 <?php
-                $pathPrefix = './sources/images/imgs_instructors/imagenes_tarjetas/';
+                /*$pathPrefix = './sources/images/imgs_instructors/imagenes_tarjetas/';
                 $elements = [
                     [
                         'img' => $pathPrefix . 'kateanderson.jpg',
@@ -126,14 +126,14 @@
                         'titulo' => 'Stella Clark',
                         'text' => 'Especialista en ballet clásico y neoclásico, ganadora de múltiples premios de danza.'
                     ],
-                ];
-                ?>
+                ];*/
+                include './scripts/tarjetasinstructores.php' ?>
                 <div class="row fila-tarjetas">
                     <?php foreach ($elements as $element) { ?>
                         <div class="column12 mcolumn4 tarjeta-instructores montserrat-normal ctext">
-                            <p class="column12 tarjeta-imagen-instructores"><img src="<?php echo $element['img']; ?>"
+                            <picture class="column12 tarjeta-imagen-instructores"><img src="<?php echo $element['img']; ?>"
                                     alt="">
-                            </p>
+                            </picture>
                             <h4 class="column12 tarjeta-titulo"><?php echo $element['titulo']; ?></h4>
                             <p class="column12 tarjeta-text"><?php echo $element['text']; ?></p>
                         </div>

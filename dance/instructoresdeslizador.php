@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
+    <link rel="stylesheet" href="./styles/deslizador.css">
+    <title>INSTRUCTORS</title>
 </head>
 
 <body>
@@ -45,54 +46,74 @@
                 <section class="row content-head">
                     <div class="column8 typo despcol1">
                         <div class="row">
-                            <h1 class="column12 uppercase title-main roboto-titlexl ctext">contacts</h1>
+                            <h1 class="column12 uppercase title-main roboto-titlexl ctext">instructor page</h1>
                         </div>
                         <div class="row">
-                            <p class="column12 uppercase loc-main montserrat-normal"><strong>home</strong>·contacts</p>
+                            <p class="column12 uppercase loc-main montserrat-normal">
+                                <strong>home</strong>·<strong>instructors</strong>·instructor page
+                            </p>
                         </div>
                     </div>
                 </section>
             </div>
         </header>
         <div class="clear"></div>
+        <div class="clear"></div>
         <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
-        <section class="row tarjetero">
-            <div class="column9 cenc">
-                <div class="row fila-tarjetas-iconos">
-                    <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="bi bi-telephone-inbound"></i></p>
-                        <p class="tarjeta-titulo">1-800-123-1234</p>
-                        <p class="tarjeta-text">You can all at any time</p>
+        <section class="row row-historia">
+            <div class="column10 cenc">
+                <section class="row row-historia">
+                    <div class="slider-container">
+                        <div class="clear"></div>
+                        <div class="column9 cenc cont-instructores">
+                            <?php include("./scripts/tarjetasdeslizador.php"); ?>
+                            <div class="clear"></div>
+
+                            <div class="slider">
+            <div class="clear"></div>
+
+                                <?php foreach ($elements as $element) { ?>
+                                    <div class="column12 slides">
+                                        <div class="slide row">
+                                            <div class="column12 mcolumn7 scolumn7">
+                                                <h3 class="title roboto-bold">
+                                                    <?php echo $element['titulo']; ?>
+                                                </h3>
+                                                <h4 class="title-s montserrat-normal">
+                                                    <?php echo $element['sub-titulo']; ?>
+                                                </h4>
+                                                <p class="montserrat-normal tarjeta-text">
+                                                    <?php echo $element['text']; ?>
+                                                </p>
+                                            </div>    
+                                                <picture class="column12 mcolumn5 scolumn5 imagenes-pag-instructors">
+                                                    <img src="<?php echo $element['img']; ?>"
+                                                        alt="<?php echo $element['titulo']; ?>">
+                                                </picture>
+                                                <div class="clear"></div>
+                                            
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            
+                            </div>
+                        </div>
                     </div>
-                    <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="bi bi-map"></i></p>
-                        <p class="tarjeta-titulo">51 Francis Street,<br>Darlinghurst NSW 2010,<br>United States</p>
-                        <p class="tarjeta-text"></p>
-                    </div>
-                    <div class="column12 mcolumn3 tarjeta montserrat-normal ctext">
-                        <p class="tarjeta-imagen"><i class="fa-regular fa-paper-plane"></i></p>
-                        <p class="tarjeta-titulo">info@fuego.com</p>
-                        <p class="tarjeta-text">Feel free to email us your questions</p>
-                    </div>
-                </div>
+                </section>
+            </div>
+            <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
+
+            <!-- Botones del slider -->
+            <div class="buttons">
+                <button class="button" onclick="prevSlide()">&#10094; Anterior</button>
+                <button class="button" onclick="nextSlide()">Siguiente &#10095;</button>
             </div>
         </section>
+
         <div class="clear"></div>
         <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
         <div class="clear"></div>
-        <section class="row contact-row">
-            <h2 class="column12 form-title roboto-bold title ctext">Contact Form</h2>
-            <form class="column12 mcolumn4 scolumn4 contact-form cenc ctext" action="./scripts/form.php" method="post">
-                <input type="text" name="name" id="your_name" placeholder="Your Name">
-                <input type="email" name="mail" id="mail" placeholder="E-mail">
-                <input type="tel" name="tel" id="telephone" placeholder="Phone">
-                <textarea name="message" id="message" placeholder="Message"></textarea>
-                <input class="submitbtn" id="submit" type="submit" value="Send">
-            </form>
-        </section>
-        <div class="clear"></div>
         <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
-        <div class="clear"></div>
         <footer class="row imagen-despedida">
             <div class="column4 despedida texto-despedida">
                 <h3 class="column12 title roboto-bold uppercase left-align logo-head">fuego
@@ -134,6 +155,7 @@
             </div>
         </footer>
     </div>
+    <script src="./scripts/deslizador.js"></script>
     <script src="https://kit.fontawesome.com/bcf25a6078.js" crossorigin="anonymous"></script>
 </body>
 
