@@ -72,7 +72,7 @@
                             <div class="slider">
             <div class="clear"></div>
 
-                                <?php foreach ($elements as $element) { ?>
+                                <?php foreach (getSlides() as $element) { ?>
                                     <div class="column12 slides">
                                         <div class="slide row">
                                             <div class="column12 mcolumn7 scolumn7">
@@ -86,11 +86,11 @@
                                                     <?php echo $element['text']; ?>
                                                 </p>
                                             </div>    
-                                                <picture class="column12 mcolumn5 scolumn5 imagenes-pag-instructors">
-                                                    <img src="<?php echo $element['img']; ?>"
-                                                        alt="<?php echo $element['titulo']; ?>">
-                                                </picture>
-                                                <div class="clear"></div>
+                                            <picture class="column12 mcolumn5 scolumn5 imagenes-pag-instructors">
+                                                <img src="<?php echo $element['img']; ?>"
+                                                    alt="<?php echo $element['titulo']; ?>">
+                                            </picture>
+                                            <div class="clear"></div>
                                             
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@
             <div class="column12 separation ctext roboto-bold">[][][][][][][][][][][]</div>
 
             <!-- Botones del slider -->
-            <div class="buttons">
+            <div class="buttons column12 mcolumn6 scolumn6 cenc">
                 <button class="button" onclick="prevSlide()">&#10094; Anterior</button>
                 <button class="button" onclick="nextSlide()">Siguiente &#10095;</button>
             </div>

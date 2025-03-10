@@ -1,0 +1,356 @@
+:root {
+    --marron-claro: #d4caaf;
+    --marron-oscuro: rgb(35, 19, 20);
+    --verde: #87986c;
+    --marron: #beae94;
+}
+
+header {
+    background-image: linear-gradient(0deg, rgba(35,19,20,1) 0%, rgba(190, 174, 148, 0.347) 86%), url(../sources/coffee-7066308_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+#barrainfo {
+    position: static;
+    top: 0;
+}
+
+#navegacion {
+    position: sticky;
+    top: 0px;
+}
+
+.info {
+    background-color: var(--marron);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem;
+    text-align: left;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+
+
+.telefono {
+    letter-spacing: 0.2rem;
+}
+
+.info i {
+    padding-inline-end: 0.4rem;
+}
+
+.info .logos {
+    flex-basis: 20%;
+}
+
+.logomain {
+    width: 200px;
+    margin: 0;
+    /*background-color: var(--marron);*/
+}
+
+
+@media (min-width:960px) {
+    .navegacion {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        align-items: normal !important;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .info {
+        text-align:center !important;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .logomain {
+        width: 150px;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+    transition: all 0.5s ease-in-out;
+}
+
+.enlaces {
+    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.enlaces-boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.enlaces-boton li a {
+    color: var(--marron-oscuro);
+    font-size: 1.2rem;
+}
+
+.title-content {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.row-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--verde);
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    color: var(--marron-claro);
+}
+
+@media (min-width: 960px) {
+    .servicios {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+        gap: 1rem;
+        padding: 2rem;
+        background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);
+        height: 100vh;
+    }
+
+    .servicios figure {
+        overflow: hidden;
+        background: var(--marron-claro);
+        height: 300px;
+        position: relative;
+        border-radius: 10px;
+        width: auto !important;
+    }
+}
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #87986c;
+    background: linear-gradient(0deg, rgba(212, 202, 175, 0.655) 0%, rgba(212, 202, 175, 0.655) 100%);
+    height: 100vh;
+}
+
+.servicios figure {
+    width: 50%;
+    overflow: hidden;
+    background: var(--marron-claro);
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.servicios figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.servicios figure figcaption {
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    color: var(--marron-oscuro);
+    font-size: 1rem;
+    align-self: self-end;
+    width: 100%;
+    background-color: var(--marron-claro);
+    transition: all 0.5s;
+}
+
+.servicios figure figcaption div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.servicios figure figcaption div a {
+    color: var(--marron-oscuro);
+}
+
+.servicios figure h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.servicios figure h2 span {
+    font-weight: 700;
+}
+
+.servicios figure figcaption > p {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--marron-claro);
+    background: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 85%, rgba(35, 19, 20, 0.5) 85%);
+}
+
+figure.effect.zoe {
+    transition: box-shadow 0.5s;
+}
+
+figure.effect.zoe figcaption {
+    transition: transform 0.5s;
+}
+
+figure.effect-zoe figcaption > p {
+    transition: all 0.5s;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition-delay: 0.5s;
+}
+
+figure.effect-zoe:hover {
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 30px 60px -25px inset, rgba(0, 0, 0, 0.5) 0px 18px 36px -25px inset, rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+figure.effect-zoe:hover figcaption {
+    transform: translate3d(0, -100%, 0);
+}
+
+figure.effect-zoe:hover figcaption > p {
+    transform: translateY(-200%);
+    opacity: 1;
+}
+
+.another-effect {
+    height: 100vh;
+    background-color: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-box {
+    text-align: center;
+    border: 3px solid var(--marron);
+    box-shadow: var(--marron-oscuro, 0.4) 0px 2px 4px, var(--marron-oscuro, 0.3) 0px 7px 13px -3px, var(--marron-oscuro, 0.2) 0px -3px 0px inset;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: all 0.5sease-in-out;
+    position: relative;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.my-box div {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    transition: all 0.5sease-in-out;
+    width: 100%;
+    align-content: space-around;
+}
+
+.my-box div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 9%;
+    transition: all 1s ease;
+}
+
+.my-box:hover div{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.my-box:hover div h1 {
+    transition-delay: 0.2s;
+}
+
+/*.my-box:hover div {
+    flex-direction: row;
+}
+
+.my-box:hover div h1 {
+    align-self: stretch;
+    transition: flex-direction 0.5s ease-in-out;
+}*/
+
+.my-box:hover p {
+    opacity: 1;
+    left: 12%;
+    transition: all 0.5s ease-in-out;
+}
+
+.my-box div h1 {
+    padding: 0 0.5rem;
+    color: var(--marron-oscuro);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.5s ease-in-out;
+}
+
+.my-box div h2 {
+    padding: 0 0.5rem;
+    color: var(--marron-oscuro);
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    transition: all 0.5s ease-in-out;
+}
+
+.my-box > p {
+    align-self: center;
+    position: absolute;
+    left: -50%;
+    width: 75%;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+
+
