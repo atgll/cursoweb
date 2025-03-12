@@ -1,0 +1,572 @@
+:root {}
+
+
+
+.encabezado {
+    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pizzas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    animation: fondoanimacion 30s ease-out infinite alternate both;
+    overflow: hidden;
+}
+
+
+
+
+
+.navegacion {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    top: 0px;
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    padding: 0.5rem;
+    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 2;
+    gap: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.logo-menu .logo {
+    width: 125px;
+
+}
+
+.menu li a {
+    color: var(--marron-oscuro);
+    font-size: 1rem;
+    color: white;
+    flex-basis: 3;
+}
+
+
+.login-search {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.iconos a {
+    color: white;
+}
+
+.row-title {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-content: center;
+}
+
+
+.title-content {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+    flex-basis: 20%;
+}
+
+.row-title img {
+    padding: 10px;
+    width: 250px;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    order: 2;
+
+}
+
+.sub-title {
+    font-style: italic;
+    font-size: 1.2rem;
+    order: 1;
+}
+
+.text {
+    font-size: 1rem;
+    order: 3;
+}
+
+@media (min-width: 960px) {
+
+    .encabezado {
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pizzas.jpg);
+        background-repeat: no-repeat;
+        background-size: 75vh;
+        background-position: center center;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        animation: fondoanimacion 30s ease-out infinite alternate both;
+        overflow: hidden;
+    }
+
+    .navegacion {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+        transition: all 0.5s ease-in-out;
+        position: sticky;
+        top: 0px;
+    }
+
+    .menu {
+        padding: 0.5rem;
+        /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-basis: 2;
+        gap: 1rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+
+    .tarjetas {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: beige;
+    }
+
+}
+
+
+.tarjetas {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: beige;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-icon {
+    font-size: 2rem;
+    order: 1;
+    padding: 0.5rem;
+}
+
+.card-text {
+    order: 2;
+    padding: 0.8rem;
+    border-left: 1px solid gray;
+}
+
+.card-text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-text p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0.75) 15%, rgba(195, 195, 195, 0.5) 100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content p {
+    flex-basis: 10%;
+    padding: 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.footer-content ul li a {
+    padding: 10px;
+    color: black;
+}
+
+
+.footer-logo {
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 960px) {
+    .form-container {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .reservation-form {
+        padding: 10px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        width: 50%;
+    }
+
+    .form-fila {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .campo {
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+
+    .campo input {
+        border-bottom: dotted 1px black;
+
+    }
+
+    .reservation-form input {
+        color: black;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .reservation-form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    #submitbtn {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30%;
+        align-self: center;
+    }
+}
+
+.form-container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.reservation-form {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+.form-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+
+.campo {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+.campo input {
+    border-bottom: dotted 1px black;
+
+}
+
+.reservation-form input {
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.reservation-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#submitbtn {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 75%;
+    align-self: center;
+}
+
+/*Animacion*/
+
+@keyframes fondoanimacion {
+    0% {
+        background-size: 100%;
+        transform-origin: 50% 16%;
+    }
+
+    20% {
+        background-size: 130%;
+        transform-origin: bottom left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/cocina.jpg);
+    }
+
+    40% {
+        background-size: 100%;
+        transform-origin: top 50% 16%;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
+    }
+
+    60% {
+        background-size: 130%;
+        transform-origin: top left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/brindis.jpg);
+    }
+
+    80% {
+        background-size: 100%;
+        transform-origin: 50% 16%;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
+    }
+
+    100% {
+        background-size: 130%;
+        transform-origin: top left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/lasagna.jpg);
+    }
+}
+
+
+.presentacion-container {
+    background-image: url(../sources/images/presentacion/laterales/2/aceite.png), url(../sources/images/presentacion/laterales/2/pizzas.png);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 75vh;
+    overflow: hidden;
+}
+
+/*.left-img {
+    position: absolute;
+    background: transparent;
+    width: 70%;
+    z-index: 10;
+    left: 0;
+}
+
+.right-img {
+    position: absolute;
+    background: transparent;
+    width: 70%;
+    z-index: 10;
+    right: 0;
+}*/
+
+.pres-article {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.firma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.firma img {
+    width: 100px;
+}
+
+.tarjetero-articulo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: baseline;
+    align-items: center;
+}
+
+.article-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 0.5rem;
+
+}
+
+.article-card picture img {
+    width: 150px;
+}
+
+.article-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.promotions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
+    height: 100vh;
+    align-items: center;
+}
+
+.promotions-container {
+    display: flex;
+    gap: 1rem;
+    width: 70%;
+    color: white;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.promotions-cards {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.promotion-menu {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.promotion-disses {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.disses-card {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 0.5rem;
+}
+
+.disses-text {
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.disses-text h3 {
+    font-weight: 700;
+}
+
+.disses-text > p:first-child {
+    font-style: italic;
+}
+
+.disses-card img {
+    width: 100px;
+}
