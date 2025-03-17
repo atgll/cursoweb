@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
     <link rel="stylesheet" href="./style/grid12.css">
     <link rel="stylesheet" href="./style/fonts.css">
     <link rel="stylesheet" href="./style/element.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 </head>
+
 <body>
     <header class="encabezado">
-        <nav class="navegacion">
+        <nav class="navegacion" id="navegacion">
             <div class="logo-menu">
-                <picture class="logo">
-                    <img  src="./sources/images/logo/logo_sf.png" alt="">
+                <picture class="logo" id="logomain">
+                    <img src="./sources/images/logo/nuevologo/laurel_sn_fondo.png" alt="">
                 </picture>
-                <ul class="menu">
+                <ul class="menu pt-serif-regular">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="#!">Chefs</a></li>
@@ -28,7 +32,7 @@
                 </ul>
             </div>
             <div class="login-search">
-                <ul class="iconos">
+                <ul class="iconos pt-serif-regular">
                     <li><a href="#!"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#!"><i class="fa-solid fa-language"></i></a></li>
@@ -37,59 +41,219 @@
         </nav>
         <div class="row-title">
             <div class="title-content">
-                <h1 class="title">Italian Food</h1>
-                <h3 class="sub-title">Alias temporibus sequi ea incidunt.</h3>
-                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, laboriosam dolore. Porro ab iusto, dolores tempore hic iste non harum saepe deleniti id quisquam rem provident deserunt nam eligendi eius.</p>
+                <h1 class="title vollkorn-bold">Italian Food</h1>
+                <h3 class="sub-title vollkorn-italic">Alias temporibus sequi ea incidunt.</h3>
+                <p class="text vollkorn-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                    laboriosam dolore. Porro ab iusto, dolores tempore hic iste non harum saepe deleniti id quisquam rem
+                    provident deserunt nam eligendi eius.</p>
+
             </div>
             <img src="./sources/images/titlecontent/pizzacontent.png" alt="">
         </div>
     </header>
-    <section class="tarjetas">
-        <figure class="tarjeta">
+    <section class="us-sect1 pt-serif-regular">
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum esse, aliquam deserunt at beatae culpa
+                nobis qui soluta eligendi vero illum, commodi ipsam exercitationem sapiente quae excepturi tenetur saepe
+                sint.
+                Dignissimos, perferendis vero nostrum voluptatem blanditiis facilis porro itaque velit? Incidunt, veniam
+                modi? Cupiditate vitae architecto repudiandae vero impedit error fugiat minus adipisci facere, inventore
+                dolores commodi! Eligendi, inventore. Porro!</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum esse, aliquam deserunt at beatae culpa
+                nobis qui soluta eligendi vero illum, commodi ipsam exercitationem sapiente quae excepturi tenetur saepe
+                sint.
+                Dignissimos, perferendis vero nostrum voluptatem blanditiis facilis porro itaque velit? Incidunt, veniam
+                modi? Cupiditate vitae architecto repudiandae vero impedit error fugiat minus adipisci facere, inventore
+                dolores commodi! Eligendi, inventore. Porro!</p>
+        </article>
+        <picture>
+            <img src="./sources/images/nosotros/pannacota.jpg" alt="">
+        </picture>
+    </section>
+    <section class="us-sect2">
+        <picture>
+            <img src="./sources/images/nosotros/canolis.jpg" alt="">
+        </picture>
+        <figure class="tarjeta-us">
             <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
+                <h3 class="vollkorn-bold">Gourmet template</h3>
+                <p class="vollkorn-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis animi
+                    perspiciatis repellat quisquam necessitatibus.</p>
             </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
+            <div class="card-icon vollkorn-normal">
+                <img src="./sources/icons/ballon_big.svg" alt="">
             </div>
         </figure>
-        <figure class="tarjeta">
+        <figure class="tarjeta-us">
             <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
+                <h3 class="vollkorn-bold">Clean tastes</h3>
+                <p class="vollkorn-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius autem nihil
+                    culpa eos sunt eveniet odio, ad perferendis dolorum.</p>
             </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
+            <div class="card-icon vollkorn-normal"">
+                <i class=" bi bi-cup-hot"></i>
             </div>
-        </figure>        <figure class="tarjeta">
+        </figure>
+        <figure class="tarjeta-us">
             <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
+                <h3 class="vollkorn-bold">Modern enviroment</h3>
+                <p class="vollkorn-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt, amet
+                    voluptate molestias blanditiis quos rem.</p>
             </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
-            </div>
-        </figure>        <figure class="tarjeta">
-            <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
-            </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
+            <div class="card-icon vollkorn-normal"">
+                <i class=" bi bi-balloon"></i>
             </div>
         </figure>
     </section>
-    <section>
-
+    <section class="reseñas">
+        <div class="slide">
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/gato.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Jorge Lopez
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Google
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/chica_farola.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Chica Farola
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Google
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/chico_frio.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Chico Frío
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Yahoo
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/gato.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Jorge Lopez
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Google
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/chica_farola.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Chica Farola
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Google
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+            <figure class="slide-reseña">
+                <p class="reseña pt-serif-regular">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis, eius eum voluptate,
+                    impedit
+                    accusantium et recusandae pariatur error quos natus."
+                </p>
+                <div>
+                    <h4 class="author-image">
+                        <img src="./sources/images/retratosreseñas/chico_frio.jpg" alt="">
+                    </h4>
+                    <div>
+                        <h3 class="author-name vollkorn-bold">
+                            Chico Frío
+                        </h3>
+                        <h6 class="author-origin pt-serif-regular">
+                            Yahoo
+                        </h6>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+    <section class="filosofia">
+        <div class="filosofia-text">
+            <p class="vollkorn-italic">We love serve the best pasta</p>
+            <h2 class="vollkorn-bold">our philosophy</h2>
+            <p class="vollkorn-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure deserunt ipsa
+                veritatis quidem labore a laudantium tempora sapiente ipsum quisquam rem minus consequatur eum itaque
+                nihil, aliquid, quasi culpa? Debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                expedita maiores praesentium ad nam, quas incidunt quisquam atque cupiditate tenetur fuga illo et libero
+                delectus dolore voluptates repellat est doloremque.</p>
+            <picture class="firma">
+                <img src="./sources/images/presentacion/firma.png" alt="firma">
+                <h5>Jeremy Switzend</h5>
+            </picture>
+        </div>
     </section>
     <footer>
         <section class="footer-content">
             <picture class="footer-logo">
-                <img src="./sources/images/logo/logo.jpg" alt="logotipo">
+                <img src="./sources/images/logo/nuevologo/laurel_cn_fondo.jpg" alt="logotipo">
             </picture>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, impedit? Quas, molestias! </p>
-            <ul>
+            <p class="pt-serif-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, impedit? Quas,
+                molestias! </p>
+            <ul class="pt-serif-regular">
                 <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#!"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#!"><i class="fa-brands fa-square-instagram"></i></a></li>
@@ -97,7 +261,13 @@
             </ul>
         </section>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/bcf25a6078.js" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
+    <!-- <script src="./scripts/glide.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
+
 </html>

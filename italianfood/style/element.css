@@ -1,7 +1,3 @@
-
-
-
-
 .encabezado {
     background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pizzas.jpg);
     background-repeat: no-repeat;
@@ -19,34 +15,48 @@
 
 
 .navegacion {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0) 100%);
     padding: 0.5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
     transition: all 0.5s ease-in-out;
-    position: sticky;
+}
+
+nav {
+    width: 100%;
+    position: fixed !important;
     top: 0px;
 }
 
 .logo-menu {
     display: flex;
     flex-direction: row;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .menu {
     padding: 0.5rem;
-    /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-basis: 2;
     gap: 1rem;
     transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .logo-menu .logo {
-    width: 125px;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+
 
 }
 
@@ -55,6 +65,8 @@
     font-size: 1rem;
     color: white;
     flex-basis: 3;
+    transition: all 0.5s ease-in-out;
+
 }
 
 
@@ -80,11 +92,11 @@
 .row-title {
     flex-grow: 2;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     color: white;
     align-content: center;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -100,7 +112,7 @@
 
 .row-title img {
     padding: 10px;
-    width: 250px;
+    width: 200px;
 }
 
 .title {
@@ -143,7 +155,6 @@
         justify-content: space-between !important;
         /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
         transition: all 0.5s ease-in-out;
-        position: sticky;
         top: 0px;
     }
 
@@ -159,6 +170,87 @@
         transition: all 0.7s ease-in-out;
     }
 
+    .logo-menu .logo {
+        padding: 5px;
+        width: 100px;
+        transition: all 0.5s ease-in-out;
+
+
+    }
+
+    .menu li a {
+        color: var(--marron-oscuro);
+        font-size: 1rem;
+        color: white;
+        flex-basis: 3;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+
+    .login-search {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+
+    .iconos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+    }
+
+    .iconos a {
+        color: white;
+    }
+
+    .row-title {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        align-content: center;
+    }
+
+
+    .title-content {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 1rem;
+        flex-basis: 20%;
+    }
+
+    .row-title img {
+        padding: 10px;
+        width: 250px;
+    }
+
+    .title {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 3rem;
+        order: 2;
+
+    }
+
+    .sub-title {
+        font-style: italic;
+        font-size: 1.2rem;
+        order: 1;
+    }
+
+    .text {
+        font-size: 1rem;
+        order: 3;
+    }
 
     .tarjetas {
         padding: 1rem;
@@ -170,91 +262,51 @@
         background-color: beige;
     }
 
-}
+    @keyframes peperonnipizza {
+        from {
+            left: 278.302px;
+            transform: rotate(146.078deg);
+        }
+
+        to {
+            left: 1950px;
+            transform: rotate(245deg);
+        }
+    }
 
 
-.tarjetas {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: beige;
-}
+    #pizzagiro {
+        visibility: visible !important;
+        position: absolute;
+        background: transparent;
+        width: 65%;
+        z-index: 10;
+        top: -10px;
+        animation: peperonnipizza linear;
+        animation-timeline: scroll(root block);
+        transition: all 0.5s ease-in-out;
+    }
 
-.tarjeta {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    .presentacion-container {
+        padding: 1rem;
+        background: none !important;
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        animation: muevefondo linear;
+        animation-timeline: scroll(root block);
+        height: 80vh;
+        overflow: hidden !important;
+    }
 
-.card-icon {
-    font-size: 2rem;
-    order: 1;
-    padding: 0.5rem;
-}
+    .article-text {
+        width: 60% !important;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+    }
 
-.card-text {
-    order: 2;
-    padding: 0.8rem;
-    border-left: 1px solid gray;
-}
-
-.card-text h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.card-text p {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-footer {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0.75) 15%, rgba(195, 195, 195, 0.5) 100%);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1.2rem;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-content p {
-    flex-basis: 10%;
-    padding: 10px;
-}
-
-.footer-content ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 1rem;
-}
-
-.footer-content ul li a {
-    padding: 10px;
-    color: black;
-}
-
-
-.footer-logo {
-    padding: 10px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-@media (min-width: 960px) {
     .form-container {
         padding: 10px;
         display: flex;
@@ -313,6 +365,364 @@ footer {
         width: 30%;
         align-self: center;
     }
+
+
+    .promotions {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-content: center !important;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
+        height: 75vh;
+        align-items: center;
+    }
+
+    .promotions-container {
+        overflow: unset !important;
+        display: flex;
+        gap: 1rem;
+        width: 65% !important;
+        color: white;
+        flex-flow: column wrap !important;
+        align-items: center !important;
+    }
+
+    .promotions-container>p {
+        font-style: italic;
+    }
+
+    .promotions-container>h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .promotions-cards {
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap !important;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .promotion-menu {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.4) 0%, rgba(0, 0, 0, 0.4) 86%), url(../sources/images/animacion/pasta.jpg);
+        background-size: cover;
+        height: 330px;
+    }
+
+    .promotion-menu h2 {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .promotion-menu p {
+        padding: 10px;
+    }
+
+    .promotion-menu button {
+        background: transparent;
+        border: solid white 1px;
+        border-radius: 5px;
+        padding: 0.5rem;
+        color: white;
+    }
+
+    .promotion-disses {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .disses-card {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        gap: 0.5rem;
+    }
+
+    .disses-text {
+        padding: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    .disses-text h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .disses-text p {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-style: italic;
+        text-decoration: underline 1px black solid;
+    }
+
+    .disses-card img {
+        width: 125px;
+    }
+
+    .us-sect1 {
+        display: flex;
+        padding: 1rem;
+        margin: 10px;
+        flex-flow: row wrap;
+        gap: 1rem;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .us-sect1 picture img {
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .us-sect1 article {
+        font-size: 0.8rem;
+        flex-basis: 25%;
+    }
+    
+    .us-sect2 {
+        display: flex;
+        padding: 1rem;
+        margin: 10px;
+        flex-flow: row wrap;
+        gap: 1rem;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .tarjeta-us {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-evenly;
+        flex-basis: 20%;
+    }
+    
+    .tarjeta-us .card-text {
+        border: none;
+    }
+    
+    .tarjeta-us .card-text h3 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    
+    .tarjeta-us .card-text p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        text-align: left;
+        padding: 5px;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    .card-icon img {
+        width: 60px;
+    }
+    
+    .us-sect2 picture img {
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    
+    .reseñas {
+        height: 50vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background-color: rgba(220, 220, 220, 0.503);
+    }
+    
+    .slide {
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .slide-reseña {
+        margin: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .slide-reseña>div {
+        padding: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .slide-reseña>div div {
+        margin: 10px;
+        line-height: 1.5rem;
+    }
+    
+    .slide-reseña>div .author-image img {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .reseña {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+    
+    .filosofia {
+        height: 75vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 86%), url(../sources/images/nosotros/filosofia.jpg);
+        background-position: center;
+    }
+    
+    .filosofia-text {
+        text-shadow: 0px 1px 1px #000000;
+        padding: 1rem;
+        text-align: center;
+        line-height: 1.2rem;
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 86%);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .filosofia-text h2 {
+        text-shadow: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+}
+
+
+.tarjetas {
+    margin: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(221, 221, 221, 0.5);
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    order: 1;
+    padding: 0.5rem;
+}
+
+.card-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+    order: 2;
+    border-left: 1px solid rgba(175, 175, 175, 0.5);
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.card-text h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-text p {
+    font-size: 0.5rem;
+    font-weight: 200;
+}
+
+footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0.75) 15%, rgba(195, 195, 195, 0.5) 100%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content p {
+    flex-basis: 10%;
+    padding: 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.footer-content ul li a {
+    padding: 10px;
+    color: black;
+}
+
+
+.footer-logo {
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .form-container {
@@ -415,38 +825,39 @@ footer {
     }
 }
 
+@keyframes muevefondo {
+    from {
+        background-color: #fff;
+        background-position: -20% 50%, 100% 10%;
+    }
+
+    to {
+        background-color: #f9f9f9;
+        background-position: -50% 40%, 120% 50%;
+    }
+
+}
+
+#pizzagiro {
+    visibility: hidden;
+}
 
 .presentacion-container {
-    background-image: url(../sources/images/presentacion/laterales/2/aceite.png), url(../sources/images/presentacion/laterales/2/pizzas.png);
-    background-position: left, right;
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding: 1rem;
+    overflow-y: scroll;
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    height: 75vh;
-    overflow: hidden;
+    justify-content: center;
+    animation: muevefondo linear;
+    animation-timeline: scroll(root block);
+    height: 80vh;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
-
-/*.left-img {
-    position: absolute;
-    background: transparent;
-    width: 70%;
-    z-index: 10;
-    left: 0;
-}
-
-.right-img {
-    position: absolute;
-    background: transparent;
-    width: 70%;
-    z-index: 10;
-    right: 0;
-}*/
 
 .pres-article {
-    width: 50%;
+    width: 95%;
     text-align: center;
     display: flex;
     flex-flow: column wrap;
@@ -467,12 +878,17 @@ footer {
     width: 100px;
 }
 
+.firma h5 {
+    font-style: italic;
+    text-decoration: dotted 1px black;
+}
+
 .tarjetero-articulo {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: baseline;
-    align-items: center;
+    align-items: baseline;
 }
 
 .article-card {
@@ -488,10 +904,20 @@ footer {
     width: 150px;
 }
 
+.article-card>h3 {
+    font-size: 1rem;
+}
+
 .article-text {
+    width: 80%;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
+}
+
+.article-text>h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .promotions {
@@ -500,26 +926,39 @@ footer {
     justify-content: center;
     align-content: center;
     background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
-    height: 100vh;
+    height: 75vh;
     align-items: center;
 }
 
 .promotions-container {
+    padding: 1rem;
+    overflow: scroll;
     display: flex;
     gap: 1rem;
-    width: 70%;
-    color: white;
-    flex-flow: column wrap;
-    align-items: center;
+    width: 100%;
+    color: rgba(255, 255, 255);
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.promotions-container>p {
+    font-style: italic;
+}
+
+.promotions-container>h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 
 .promotions-cards {
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
     gap: 2rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -531,9 +970,27 @@ footer {
     align-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
+    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.4) 0%, rgba(0, 0, 0, 0.4) 86%), url(../sources/images/animacion/pasta.jpg);
     background-size: cover;
-    height: 300px;
+    height: 330px;
+}
+
+.promotion-menu h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.promotion-menu p {
+    padding: 10px;
+}
+
+.promotion-menu button {
+    background: transparent;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: white;
 }
 
 .promotion-disses {
@@ -547,7 +1004,8 @@ footer {
     color: black;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
     gap: 0.5rem;
 }
 
@@ -560,13 +1018,175 @@ footer {
 }
 
 .disses-text h3 {
+    font-size: 1rem;
     font-weight: 700;
 }
 
-.disses-text > p:first-child {
+.disses-text p {
+    font-size: 0.9rem;
+}
+
+.price {
     font-style: italic;
+    text-decoration: underline 1px black solid;
 }
 
 .disses-card img {
+    width: 125px;
+    height: 150px;
+}
+
+.us-sect1 {
+    display: flex;
+    padding: 1rem;
+    margin: 10px;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.us-sect1 picture img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.us-sect1 article {
+    font-size: 0.8rem;
+    flex-basis: 45%;
+}
+
+.us-sect2 {
+    display: flex;
+    padding: 1rem;
+    margin: 10px;
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tarjeta-us {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-evenly;
+    flex-basis: 20%;
+}
+
+.tarjeta-us .card-text {
+    border: none;
+}
+
+.tarjeta-us .card-text h3 {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.tarjeta-us .card-text p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    text-align: left;
+    padding: 5px;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+}
+
+.card-icon img {
+    width: 60px;
+}
+
+.us-sect2 picture img {
     width: 100px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.reseñas {
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.503);
+}
+
+.slide {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slide-reseña {
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.slide-reseña>div {
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slide-reseña>div div {
+    margin: 10px;
+    line-height: 1.5rem;
+}
+
+.slide-reseña>div .author-image img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.reseña {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.filosofia {
+    padding: 1rem;
+    height: 75vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 86%), url(../sources/images/nosotros/filosofia.jpg);
+    background-position: center;
+}
+
+.filosofia-text {
+    text-shadow: 0px 1px 1px #000000;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 86%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.filosofia-text h2 {
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }

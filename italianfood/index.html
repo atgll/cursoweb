@@ -12,12 +12,12 @@
 </head>
 <body>
     <header class="encabezado">
-        <nav class="navegacion">
+        <nav class="navegacion" id="navegacion">
             <div class="logo-menu">
-                <picture class="logo">
-                    <img  src="./sources/images/logo/logo_sf.png" alt="">
+                <picture class="logo" id="logomain">
+                    <img  src="./sources/images/logo/nuevologo/laurel_sn_fondo.png" alt="">
                 </picture>
-                <ul class="menu">
+                <ul class="menu pt-serif-regular">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./nosotros.html">Nosotros</a></li>
                     <li><a href="#!">Chefs</a></li>
@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="login-search">
-                <ul class="iconos">
+                <ul class="iconos pt-serif-regular">
                     <li><a href="#!"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#!"><i class="fa-solid fa-language"></i></a></li>
@@ -37,58 +37,60 @@
         </nav>
         <div class="row-title">
             <div class="title-content">
-                <h1 class="title">Italian Food</h1>
-                <h3 class="sub-title">Alias temporibus sequi ea incidunt.</h3>
-                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, laboriosam dolore. Porro ab iusto, dolores tempore hic iste non harum saepe deleniti id quisquam rem provident deserunt nam eligendi eius.</p>
+                <h1 class="title vollkorn-bold">Italian Food</h1>
+                <h3 class="sub-title vollkorn-italic">Alias temporibus sequi ea incidunt.</h3>
+                <p class="text vollkorn-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, laboriosam dolore. Porro ab iusto, dolores tempore hic iste non harum saepe deleniti id quisquam rem provident deserunt nam eligendi eius.</p>
+
             </div>
             <img src="./sources/images/titlecontent/pizzacontent.png" alt="">
         </div>
     </header>
-    <section class="tarjetas">
+    <section class="tarjetas ">
         <figure class="tarjeta">
-            <div class="card-text">
+            <div class="card-text pt-serif-regular">
                 <h3>Call Now</h3>
                 <p>+34 098 567 432</p>
             </div>
-            <div class="card-icon">
+            <div class="card-icon pt-serif-regular">
                 <i class="fa-solid fa-tty"></i>
             </div>
         </figure>
         <figure class="tarjeta">
-            <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
+            <div class="card-text pt-serif-regular">
+                <h3>Contact US</h3>
+                <p>italianfood@pasta.com</p>
             </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
+            <div class="card-icon pt-serif-regular">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+        </figure>        
+        <figure class="tarjeta">
+            <div class="card-text pt-serif-regular">
+                <h3>Location</h3>
+                <p>Calle Falsa,123, Sta. Pola</p>
+            </div>
+            <div class="card-icon pt-serif-regular">
+                <i class="fa-regular fa-map"></i>
             </div>
         </figure>        <figure class="tarjeta">
-            <div class="card-text">
+            <div class="card-text pt-serif-regular">
                 <h3>Call Now</h3>
                 <p>+34 098 567 432</p>
             </div>
-            <div class="card-icon">
-                <i class="fa-solid fa-tty"></i>
-            </div>
-        </figure>        <figure class="tarjeta">
-            <div class="card-text">
-                <h3>Call Now</h3>
-                <p>+34 098 567 432</p>
-            </div>
-            <div class="card-icon">
+            <div class="card-icon pt-serif-regular">
                 <i class="fa-solid fa-tty"></i>
             </div>
         </figure>
     </section>
     <section class="presentacion-container">
-        <!--<picture class="left-img">
-            <img src="./sources/images/presentacion/laterales/aceite.png" alt="aceite">
-        </picture>-->
+        <picture id="pizzagiro">
+            <img src="./sources/images/pizzagiro/pizza_que_gira.png" alt="pizzaaaa">
+        </picture>
         <article class="pres-article">
             <div class="article-text">
-                <h4>Repudiandae voluptatibus</h4>
-                <h3>WELCOME</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio iusto hic odit officia illo velit asperiores itaque accusantium non. Repudiandae voluptatibus ducimus consectetur modi? Harum id temporibus fugit corrupti.</p>
+                <h4 class="vollkorn-italic">Repudiandae voluptatibus</h4>
+                <h3 class="vollkorn-bold">WELCOME</h3>
+                <p class="pt-serif-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio iusto hic odit officia illo velit asperiores itaque accusantium non. Repudiandae voluptatibus ducimus consectetur modi? Harum id temporibus fugit corrupti.</p>
                 <picture class="firma">
                     <img src="./sources/images/presentacion/firma.png" alt="firma">
                     <h5>Jeremy Switzend</h5>
@@ -98,55 +100,52 @@
                         <picture>
                             <img src="./sources/images/presentacion/personal/chef.png" alt="">
                         </picture>
-                        <h3>Lorena Lamas</h3>
-                        <p>Chef Manager</p>
+                        <h3 class="vollkorn-bold">Lorena Lamas</h3>
+                        <p class="pt-serif-regular">Chef Manager</p>
                     </figure>
                     <figure class="article-card">
                         <picture>
                             <img src="./sources/images/presentacion/personal/nona.png" alt="">
                         </picture>
-                        <h3>Lorena Lamas</h3>
-                        <p>Chef Manager</p>
+                        <h3 class="vollkorn-bold">Lorena Lamas</h3>
+                        <p class="pt-serif-regular">Chef Manager</p>
                     </figure>
                     <figure class="article-card">
                         <picture>
                             <img src="./sources/images/presentacion/personal/gerente.png" alt="">
                         </picture>
-                        <h3>Lorena Lamas</h3>
-                        <p>Chef Manager</p>
+                        <h3 class="vollkorn-bold">Lorena Lamas</h3>
+                        <p class="pt-serif-regular">Chef Manager</p>
                     </figure>
                 </div>
             </div>
         </article>
-        <!--<picture class="right-img">
-            <img src="./sources/images/presentacion/laterales/pizzas.png" alt="aceite">
-        </picture>-->
     </section>
     <section class="promotions">
         <div class="promotions-container">
-            <p>Rebajas de pizzas 2x1 por ejemplo</p>
-            <h2>PROMOTIONS & DISCOUNTS</h2>
+            <p class="pt-serif-regular-italic">Rebajas de pizzas 2x1 por ejemplo</p>
+            <h2 class="vollkorn-bold">PROMOTIONS & DISCOUNTS</h2>
             <div class="promotions-cards">
                 <div class="promotion-menu">
-                    <h2>Get 50% discount etc...</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sint. Non architecto, minima soluta asperiores velit accusamus? Aperiam officia natus, neque repudiandae eveniet quae cum ex consectetur velit sit magnam.</p>
-                    <button>READ MORE</button>
+                    <h2 class="vollkorn-bold">Get 50% discount etc...</h2>
+                    <p class="vollkorn-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sint. Non architecto, minima soluta asperiores velit accusamus? Aperiam officia natus, neque repudiandae eveniet quae cum ex consectetur velit sit magnam.</p>
+                    <button class="vollkorn-bold-italic">READ MORE</button>
                 </div>
                 <div class="promotion-disses">
                     <figure class="disses-card">
                         <img src="./sources/images/animacion/lasagna.jpg" alt="">
                         <div class="disses-text">
-                            <h3>Lasagna</h3>
-                            <p>$ 21.50</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id in vitae adipisci nemo non reprehenderit iure aspernatur, consectetur iusto porro tempora modi distinctio suscipit itaque quisquam culpa quasi blanditiis quaerat?</p>
+                            <h3 class="vollkorn-bold">Lasagna</h3>
+                            <p class="price pt-serif-regular-italic"">$ 21.50</p>
+                            <p class="pt-serif-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id in vitae adipisci nemo non reprehenderit iure aspernatur, consectetur iusto porro tempora modi distinctio suscipit itaque quisquam culpa quasi blanditiis quaerat?</p>
                         </div>
                     </figure>
                     <figure class="disses-card">
-                        <img src="./sources/images/animacion/lasagna.jpg" alt="">
+                        <img src="./sources/images/animacion/pasta.jpg" alt="">
                         <div class="disses-text">
-                            <h3>Lasagna</h3>
-                            <p>$ 21.50</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id in vitae adipisci nemo non reprehenderit iure aspernatur, consectetur iusto porro tempora modi distinctio suscipit itaque quisquam culpa quasi blanditiis quaerat?</p>
+                            <h3 class="vollkorn-bold">Pasta</h3>
+                            <p class="price pt-serif-regular-italic">$ 18.50</p>
+                            <p class="pt-serif-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id in vitae adipisci nemo non reprehenderit iure aspernatur, consectetur iusto porro tempora modi distinctio suscipit itaque quisquam culpa quasi blanditiis quaerat?</p>
                         </div>
                     </figure>
                 </div>
@@ -156,10 +155,10 @@
     <footer>
         <section class="footer-content">
             <picture class="footer-logo">
-                <img src="./sources/images/logo/logo.jpg" alt="logotipo">
+                <img src="./sources/images/logo/nuevologo/laurel_cn_fondo.jpg" alt="logotipo">
             </picture>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, impedit? Quas, molestias! </p>
-            <ul>
+            <p class="pt-serif-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, impedit? Quas, molestias! </p>
+            <ul class="pt-serif-regular">
                 <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#!"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#!"><i class="fa-brands fa-square-instagram"></i></a></li>
