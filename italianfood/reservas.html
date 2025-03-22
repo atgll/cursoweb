@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italian Food</title>
+    <title>The Laurel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/grid12.css">
@@ -35,6 +35,7 @@
                 </ul>
             </div>
         </nav>
+        <div class="clear"></div>
         <div class="row-title">
             <div class="title-content">
                 <h1 class="title vollkorn-bold">Italian Food</h1>
@@ -42,39 +43,43 @@
                 <p class="text vollkorn-normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, laboriosam dolore. Porro ab iusto, dolores tempore hic iste non harum saepe deleniti id quisquam rem provident deserunt nam eligendi eius.</p>
 
             </div>
-            <img src="./sources/images/titlecontent/pizzacontent.png" alt="">
+            <img src="./sources/images/titlecontent/pizza_header.png" alt="">
         </div>
     </header>
         <section class="form-container">
-            <form action="./scripts/reservation.php" method="post" class="reservation-form">
+            <form class="reservation-form pt-serif-regular" id="reserva" enctype="application/x-www-form-urlencoded">
                 <div class="form-fila">
                     <div class="campo">
                         <label for="reservation-date">Reservation date</label>
-                        <input type="date" name="reservation-date">
+                        <input type="date" name="reservation-date" id="reservation-date" required>
                     </div>
                     <div class="campo">
-                        <label for="reservation-date">Time</label>
-                        <input type="time" name="reservation-hour">
+                        <label for="reservation-hour">Time</label>
+                        <input type="time" name="reservation-hour" id="reservation-hour" min="12:00" max="22:00" required>
                     </div>
                 </div>
                 <div class="campo">
                     <label for="client">Name and surname</label>
-                    <input type="text" name="client" id="client-form">
+                    <input type="text" name="client" id="client" required>
                 </div>
                 <div class="form-fila">
                     <div class="campo">
-                        <label for="">Email</label>
-                        <input type="email" name="email" id="email-form">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="campo">
                         <label for="tel">Telephone</label>
-                        <input type="tel" name="tel" id="tel-form">
+                        <input type="tel" name="tel" id="tel" required>
                     </div>
                 </div>
-                    <textarea name="message" id="form-message">message</textarea>
-                    <input type="submit" value="SEND REQUEST" id="submitbtn">
+                    <textarea name="message" id="message" placeholder="message"></textarea>
+                    <input type="submit" value="POST" id="submitbtn">
             </form>
-        </section>    
+        </section>  
+        <dialog id="dialogo1">
+            <button autofocus id="botoncierre">Close</button>
+            <p id="textodialogo"></p>
+        </dialog>
         <footer>
             <section class="footer-content">
                 <picture class="footer-logo">
@@ -91,5 +96,6 @@
         </footer>
     <script src="https://kit.fontawesome.com/bcf25a6078.js" crossorigin="anonymous"></script>
     <script src="./scripts/main.js"></script>
+    <!-- <script src="./scripts/newjs.js"></script> -->
 </body>
 </html>

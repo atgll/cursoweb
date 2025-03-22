@@ -1,53 +1,96 @@
-window.document.addEventListener('DOMContentLoaded', function() {
 
-    const logo = document.getElementById("logomain");
-    const navscroll = document.getElementById("navegacion");
+const logo = document.getElementById("logomain");
+const navscroll = document.getElementById("navegacion");
 
-    window.addEventListener('scroll', function() {
-        if (this.window.scrollY>0) {
-            logo.style.width="70px";
-            navscroll.style.background=("black")
-        } else {
-            logo.style.width="125px"
-            navscroll.style.background=("linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(195, 195, 195, 0) 100%)")
-        }
-    })
+window.addEventListener('scroll', function () {
+    if (this.window.scrollY > 0) {
+        logo.style.width = "70px";
+        navscroll.style.background = ("black")
+    } else {
+        logo.style.width = "125px"
+        navscroll.style.background = ("linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(195, 195, 195, 0) 100%)")
+    }
+})
 
-    $('.slide').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 960,
-                settings: {
-                    dots: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
+function EventosFormulario() {
+    //Leer formulario
+    const formulario = document.getElementById("reserva");
+    //añadir evento de envio
+    formulario.addEventListener("submit", (e) => {
+        //evitar propagacion de evento
+        e.preventDefault();
+        //leer datos formulario
+        const datos = new FormData(formulario);
+        //realizar envio de datos
+        fetch("./scripts/reservation.php", {
+            method: "POST",
+            body: datos,
+        })
+            .then(respuesta => respuesta.json())
+            .then(datosjson => {        //datos en json
+                //seleccionar dialogo en html
+                const dialogo = document.querySelector("#dialogo1");
+                //select <p> de dialogo html
+                const textoDialogo = document.querySelector("#textodialogo");
+                //seleccionar el boton de cierre  del dialogo html
+                const botonCierre = document.querySelector("#botoncierre");
+                //si existen los tres
+                if (dialogo && textoDialogo && botonCierre) {
+                    //insert resp dentro <p>
+                    textoDialogo.textContent = datosjson;
+                    // const para el boton cerrar el dialogo
+                    const cerrarDialogo = () => {
+                        //cerrar dialog y quitar el event click del boton
+                        dialogo.close();
+                        botonCierre.removeEventListener("click", cerrarDialogo);
+                    }
+                    //añadir la const anterior al boton de cierre
+                    botonCierre.addEventListener("click", cerrarDialogo);
+                    dialogo.showModal();
                 }
-            },
-
-            {
-                breakpoint: 650,
-                settings: {
-                    dots: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                }
-            },
-
-            {
-                breakpoint: 450,
-                settings: {
-                    dots: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            }
-        ]
+            });
     });
+}
+
+window.addEventListener("load", function () {
+    EventosFormulario();
 });
+
+$('.slide').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+            }
+        },
+
+        {
+            breakpoint: 750,
+            settings: {
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+            }
+        },
+
+        {
+            breakpoint: 400,
+            settings: {
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+            }
+        }
+    ]
+});
+

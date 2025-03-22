@@ -1,0 +1,9 @@
+{
+    "editor.tabSize": 3,
+    "editor.wordWrap": "wordWrapColumn",
+    "workbench.editor.enablePreview": true,
+    "workbench.colorCustomizations": {
+
+    },
+    "workbench.editor.decorations.colors": true
+}

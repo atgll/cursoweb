@@ -1,137 +1,5 @@
-.encabezado {
-    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pizzas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    animation: fondoanimacion 30s ease-out infinite alternate both;
-    overflow: hidden;
-}
-
-
-
-
-
-.navegacion {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0) 100%);
-    padding: 0.5rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    transition: all 0.5s ease-in-out;
-}
-
-nav {
-    width: 100%;
-    position: fixed !important;
-    top: 0px;
-}
-
-.logo-menu {
-    display: flex;
-    flex-direction: row;
-    transition: all 0.5s ease-in-out;
-
-}
-
-.menu {
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row !important;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-basis: 2;
-    gap: 1rem;
-    transition: all 0.7s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    flex-wrap: wrap;
-}
-
-.logo-menu .logo {
-    padding: 5px;
-    width: 100px;
-    transition: all 0.5s ease-in-out;
-
-
-}
-
-.menu li a {
-    color: var(--marron-oscuro);
-    font-size: 1rem;
-    color: white;
-    flex-basis: 3;
-    transition: all 0.5s ease-in-out;
-
-}
-
-
-.login-search {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-}
-
-.iconos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-}
-
-.iconos a {
-    color: white;
-}
-
-.row-title {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-
-.title-content {
-
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 1rem;
-    flex-basis: 20%;
-}
-
-.row-title img {
-    padding: 10px;
-    width: 200px;
-}
-
-.title {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 3rem;
-    order: 2;
-
-}
-
-.sub-title {
-    font-style: italic;
-    font-size: 1.2rem;
-    order: 1;
-}
-
-.text {
-    font-size: 1rem;
-    order: 3;
+* {
+    scrollbar-width: none !important;
 }
 
 @media (min-width: 960px) {
@@ -139,14 +7,15 @@ nav {
     .encabezado {
         background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pizzas.jpg);
         background-repeat: no-repeat;
-        background-size: 75vh;
+        background-size: cover;
         background-position: center center;
-        height: 75vh;
+        height: 75vh !important;
         display: flex;
         flex-direction: column;
         animation: fondoanimacion 30s ease-out infinite alternate both;
         overflow: hidden;
     }
+
 
     .navegacion {
         padding: 0.5rem;
@@ -156,6 +25,43 @@ nav {
         /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
         transition: all 0.5s ease-in-out;
         top: 0px;
+    }
+
+    @keyframes fondoanimacion {
+        0% {
+            background-size: 100%;
+            transform-origin: 50% 16%;
+        }
+    
+        20% {
+            background-size: 130%;
+            transform-origin: bottom left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/cocina.jpg);
+        }
+    
+        40% {
+            background-size: 100%;
+            transform-origin: top 50% 16%;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
+        }
+    
+        60% {
+            background-size: 130%;
+            transform-origin: top left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/brindis.jpg);
+        }
+    
+        80% {
+            background-size: 100%;
+            transform-origin: 50% 16%;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
+        }
+    
+        100% {
+            background-size: 130%;
+            transform-origin: top left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/lasagna.jpg);
+        }
     }
 
     .menu {
@@ -229,8 +135,10 @@ nav {
     }
 
     .row-title img {
+        align-self: center;
         padding: 10px;
-        width: 250px;
+        width: 300px !important;
+        border-radius: 50%;
     }
 
     .title {
@@ -252,14 +160,20 @@ nav {
         order: 3;
     }
 
+    
+        
     .tarjetas {
-        padding: 1rem;
         display: flex;
         flex-direction: row !important;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        background-color: beige;
+        justify-content: center !important;
+        align-items: flex-start;
+    }
+    
+
+    .tarjeta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     @keyframes peperonnipizza {
@@ -269,7 +183,7 @@ nav {
         }
 
         to {
-            left: 1950px;
+            left: 2500px;
             transform: rotate(245deg);
         }
     }
@@ -296,7 +210,7 @@ nav {
         justify-content: space-evenly;
         animation: muevefondo linear;
         animation-timeline: scroll(root block);
-        height: 80vh;
+        height: 80vh !important;
         overflow: hidden !important;
     }
 
@@ -320,7 +234,7 @@ nav {
         flex-flow: column;
         justify-content: center;
         align-content: center;
-        width: 50%;
+        width: 50% !important;
     }
 
     .form-fila {
@@ -342,7 +256,7 @@ nav {
     }
 
     .campo input {
-        border-bottom: dotted 1px black;
+        border: dotted 1px black;
 
     }
 
@@ -373,7 +287,7 @@ nav {
         justify-content: center !important;
         align-content: center !important;
         background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
-        height: 75vh;
+        height: 75vh !important;
         align-items: center;
     }
 
@@ -496,24 +410,22 @@ nav {
     
     .us-sect1 article {
         font-size: 0.8rem;
-        flex-basis: 25%;
+        flex-basis: 25% !important;
     }
     
     .us-sect2 {
         display: flex;
         padding: 1rem;
         margin: 10px;
-        flex-flow: row wrap;
+        flex-flow: row nowrap !important;
         gap: 1rem;
         align-content: center;
         justify-content: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
     }
     
     .tarjeta-us {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row nowrap !important;
         justify-content: space-around;
         align-items: center;
         align-content: space-evenly;
@@ -541,110 +453,347 @@ nav {
     }
     
     .card-icon img {
+        margin: -10px;
         width: 60px;
     }
     
-    .us-sect2 picture img {
-        width: 100px;
-        border-radius: 50%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
-    }
-    
-    .reseñas {
-        height: 50vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        background-color: rgba(220, 220, 220, 0.503);
-    }
-    
     .slide {
-        width: 60%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        gap: 1rem;
+        width: 60% !important;
     }
-    
-    .slide-reseña {
-        margin: 10px;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    
-    .slide-reseña>div {
-        padding: 10px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    .slide-reseña>div div {
-        margin: 10px;
-        line-height: 1.5rem;
-    }
-    
-    .slide-reseña>div .author-image img {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
-        width: 50px;
-        border-radius: 50%;
-    }
-    
-    .reseña {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 5px 0px;
-        background-color: whitesmoke;
-        padding: 10px;
-    }
-    
-    .filosofia {
-        height: 75vh;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 86%), url(../sources/images/nosotros/filosofia.jpg);
-        background-position: center;
-    }
-    
+
     .filosofia-text {
-        text-shadow: 0px 1px 1px #000000;
-        padding: 1rem;
-        text-align: center;
-        line-height: 1.2rem;
-        width: 50%;
+        width: 50% !important;
+    } 
+
+}
+
+@media (max-width: 380px) {
+
+    .row-title {
+        flex-grow: 2;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 86%);
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        flex-direction: row !important;
+        color: white;
+        align-content: center !important;
+        justify-content: center !important;
+        align-items: flex-end !important;
+    }
+
+    .presentacion-container {
+        padding: 1rem;
+        /* overflow-y: scroll; */
+        position: relative;
+        display: flex;
+        animation: muevefondo linear;
+        animation-timeline: scroll(root block);
+        height: 95vh !important;
+        flex-direction: row;
     }
     
-    .filosofia-text h2 {
-        text-shadow: none;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        margin: 10px 0;
+}
+
+@media (min-width: 600px) {
+    .encabezado {
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pizzas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 50vh !important;
+        display: flex;
+        flex-direction: column;
+        animation: fondoanimacion 30s ease-out infinite alternate both;
+        overflow: hidden;
     }
+
+
+    .navegacion {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        /*background: linear-gradient(0deg, rgba(212,202,175,0.4729344729344729) 0%, rgba(212,202,175,0.48290598290598286) 100%);*/
+        transition: all 0.5s ease-in-out;
+        top: 0px;
+    }
+
+    .row-title {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: row !important;
+        color: white;
+        align-content: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    @keyframes fondoanimacion {
+        0% {
+            background-size: 100%;
+            transform-origin: 50% 16%;
+        }
+    
+        20% {
+            background-size: 130%;
+            transform-origin: bottom left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/cocina.jpg);
+        }
+    
+        40% {
+            background-size: 100%;
+            transform-origin: top 50% 16%;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pasta.jpg);
+        }
+    
+        60% {
+            background-size: 130%;
+            transform-origin: top left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/brindis.jpg);
+        }
+    
+        80% {
+            background-size: 100%;
+            transform-origin: 50% 16%;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/ñoquis.jpg);
+        }
+    
+        100% {
+            background-size: 130%;
+            transform-origin: top left;
+            background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/lasagna.jpg);
+        }
+    }
+
+    .tarjetas {
+        text-align: justify;
+        /* margin: 10px; */
+        padding: 1rem;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 1rem;
+        background-color: rgba(221, 221, 221, 0.5);
+        flex-wrap: wrap;
+    }
+    
+    #pizzagiro {
+        visibility: hidden;
+        position: absolute !important;
+    }
+    
+    .presentacion-container {
+        padding: 1rem;
+        position: relative;
+        display: flex;
+        animation: muevefondo linear;
+        animation-timeline: scroll(root block);
+        height: 50vh;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .promotions-container {
+        padding: 1rem;
+        overflow: scroll;
+        display: flex;
+        gap: 1rem;
+        width: 80% !important;
+        color: rgba(255, 255, 255);
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        /* text-align: center; */
+        align-items: flex-start;
+    }
+}
+
+
+
+.encabezado {
+    background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pizzas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 75vh !important;
+    display: flex;
+    flex-direction: column;
+    animation: fondoanimacion 30s ease-out infinite alternate both;
+    overflow: hidden;
+}
+
+@keyframes fondoanimacion {
+    0% {
+        background-size: 100%;
+        transform-origin: 50% 16%;
+    }
+
+    20% {
+        background-size: 130%;
+        transform-origin: bottom left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/cocina.jpg);
+    }
+
+    40% {
+        background-size: 100%;
+        transform-origin: top 50% 16%;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pasta.jpg);
+    }
+
+    60% {
+        background-size: 130%;
+        transform-origin: top left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/brindis.jpg);
+    }
+
+    80% {
+        background-size: 100%;
+        transform-origin: 50% 16%;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/ñoquis.jpg);
+    }
+
+    100% {
+        background-size: 130%;
+        transform-origin: top left;
+        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/lasagna.jpg);
+    }
+}
+
+
+.navegacion {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(195, 195, 195, 0) 100%);
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
+}
+
+nav {
+    width: 100%;
+    position: fixed !important;
+    top: 0px;
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.menu {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 2;
+    gap: 1rem;
+    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.logo-menu .logo {
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.menu li a {
+    color: var(--marron-oscuro);
+    font-size: 1rem;
+    color: white;
+    flex-basis: 3;
+    transition: all 0.5s ease-in-out;
 
 }
 
 
+.login-search {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.iconos a {
+    color: white;
+}
+
+.row-title {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.title-content {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+    flex-basis: 20%;
+}
+
+.row-title img {
+    padding: 10px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    order: 2;
+
+}
+
+.sub-title {
+    font-style: italic;
+    font-size: 1.2rem;
+    order: 1;
+}
+
+.text {
+    font-size: 1rem;
+    order: 3;
+}
+
+
 .tarjetas {
-    margin: 10px;
+    text-align: justify;
+    /* margin: 10px; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 1rem;
     background-color: rgba(221, 221, 221, 0.5);
+
 }
 
 .tarjeta {
@@ -678,7 +827,7 @@ nav {
 }
 
 .card-text p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     font-weight: 200;
 }
 
@@ -734,15 +883,16 @@ footer {
 }
 
 .reservation-form {
-    padding: 10px;
+    padding: 1rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 .form-fila {
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -752,7 +902,6 @@ footer {
 }
 
 .campo {
-    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -761,7 +910,7 @@ footer {
 }
 
 .campo input {
-    border-bottom: dotted 1px black;
+    border: dotted 1px black;
 
 }
 
@@ -773,8 +922,9 @@ footer {
 }
 
 .reservation-form textarea {
-    padding: 10px;
-    margin: 10px 0;
+    align-self: center;
+    width: 90%;
+    height: 50px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -788,42 +938,7 @@ footer {
 
 /*Animacion*/
 
-@keyframes fondoanimacion {
-    0% {
-        background-size: 100%;
-        transform-origin: 50% 16%;
-    }
 
-    20% {
-        background-size: 130%;
-        transform-origin: bottom left;
-        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/cocina.jpg);
-    }
-
-    40% {
-        background-size: 100%;
-        transform-origin: top 50% 16%;
-        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
-    }
-
-    60% {
-        background-size: 130%;
-        transform-origin: top left;
-        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/brindis.jpg);
-    }
-
-    80% {
-        background-size: 100%;
-        transform-origin: 50% 16%;
-        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
-    }
-
-    100% {
-        background-size: 130%;
-        transform-origin: top left;
-        background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/lasagna.jpg);
-    }
-}
 
 @keyframes muevefondo {
     from {
@@ -844,16 +959,13 @@ footer {
 
 .presentacion-container {
     padding: 1rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     position: relative;
     display: flex;
-    justify-content: center;
     animation: muevefondo linear;
     animation-timeline: scroll(root block);
-    height: 80vh;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    height: 75vh;
+    flex-direction: row;
 }
 
 .pres-article {
@@ -886,9 +998,15 @@ footer {
 .tarjetero-articulo {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: baseline;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 4rem;
+    justify-content: space-between;
+    align-content: center;
     align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .article-card {
@@ -921,12 +1039,13 @@ footer {
 }
 
 .promotions {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/ñoquis.jpg);
-    height: 75vh;
+    height: 100vh;
     align-items: center;
 }
 
@@ -951,7 +1070,7 @@ footer {
 .promotions-container>h2 {
     font-weight: 600;
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .promotions-cards {
@@ -1098,6 +1217,7 @@ footer {
 }
 
 .card-icon img {
+    margin: -10px;
     width: 60px;
 }
 
@@ -1167,7 +1287,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 86%), url(../sources/images/nosotros/filosofia.jpg);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 86%), url(../sources/images/nosotros/filos_image.jpg);
     background-position: center;
 }
 
