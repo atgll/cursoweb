@@ -26,8 +26,14 @@ function EventosFormulario() {
             method: "POST",
             body: datos,
         })
-            .then(respuesta => respuesta.json())
+            .then(respuesta => {
+                if (!respuesta.ok) {
+                    throw new Error("Error en la respuesta del servidor");
+                }
+                return respuesta.json();
+            })
             .then(datosjson => {        //datos en json
+                console.log("Respuesta del servidor:", datosjson);
                 //seleccionar dialogo en html
                 const dialogo = document.querySelector("#dialogo1");
                 //select <p> de dialogo html
@@ -37,7 +43,7 @@ function EventosFormulario() {
                 //si existen los tres
                 if (dialogo && textoDialogo && botonCierre) {
                     //insert resp dentro <p>
-                    textoDialogo.textContent = datosjson;
+                    textoDialogo.textContent = datosjson.mensaje || "Reserva enviada correctamente.";
                     // const para el boton cerrar el dialogo
                     const cerrarDialogo = () => {
                         //cerrar dialog y quitar el event click del boton
@@ -45,10 +51,14 @@ function EventosFormulario() {
                         botonCierre.removeEventListener("click", cerrarDialogo);
                     }
                     //añadir la const anterior al boton de cierre
-                    botonCierre.addEventListener("click", cerrarDialogo);
-                    dialogo.showModal();
+                    botonCierre.addEventListener("click", cerrarDialogo); 
+                    console.log("cerrarDialogo", cerrarDialogo);
+                    dialogo.showModal(); //Muestra el modal
+                } else {
+                    console.log("no se encontro el modal en el DOM");
                 }
-            });
+            })
+            .catch(error => console.error("Error en fetch:", error));
     });
 }
 

@@ -1,7 +1,7 @@
 <?php
 // Activa la visualización de errores (solo para pruebas)
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
 // Captura toda la salida y la descarta
 ob_start();

@@ -12,7 +12,7 @@
         height: 75vh !important;
         display: flex;
         flex-direction: column;
-        animation: fondoanimacion 30s ease-out infinite alternate both;
+        animation: fondoanimacionl 30s ease-out infinite alternate both !important;
         overflow: hidden;
     }
 
@@ -27,7 +27,7 @@
         top: 0px;
     }
 
-    @keyframes fondoanimacion {
+    @keyframes fondoanimacionl {
         0% {
             background-size: 100%;
             transform-origin: 50% 16%;
@@ -41,7 +41,7 @@
     
         40% {
             background-size: 100%;
-            transform-origin: top 50% 16%;
+            transform-origin: 50% 16%;
             background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/pasta.jpg);
         }
     
@@ -501,7 +501,7 @@
         height: 50vh !important;
         display: flex;
         flex-direction: column;
-        animation: fondoanimacion 30s ease-out infinite alternate both;
+        animation: fondoanimacions 30s ease-out infinite alternate both;
         overflow: hidden;
     }
 
@@ -526,7 +526,7 @@
         align-items: center !important;
     }
 
-    @keyframes fondoanimacion {
+    @keyframes fondoanimacions {
         0% {
             background-size: 100%;
             transform-origin: 50% 16%;
@@ -540,7 +540,7 @@
     
         40% {
             background-size: 100%;
-            transform-origin: top 50% 16%;
+            transform-origin: 50% 16%;
             background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pasta.jpg);
         }
     
@@ -619,11 +619,11 @@
     height: 75vh !important;
     display: flex;
     flex-direction: column;
-    animation: fondoanimacion 30s ease-out infinite alternate both;
+    animation: fondoanimacions 30s ease-out infinite alternate both;
     overflow: hidden;
 }
 
-@keyframes fondoanimacion {
+@keyframes fondoanimacions {
     0% {
         background-size: 100%;
         transform-origin: 50% 16%;
@@ -637,7 +637,7 @@
 
     40% {
         background-size: 100%;
-        transform-origin: top 50% 16%;
+        transform-origin: 50% 16%;
         background-image: linear-gradient(0deg, rgba(35, 19, 20, 0.5) 0%, rgba(0, 0, 0, 0.5) 86%), url(../sources/images/animacion/movil/pasta.jpg);
     }
 
@@ -1309,4 +1309,14 @@ footer {
     text-transform: uppercase;
     font-size: 1.5rem;
     margin: 10px 0;
+}
+
+#dialogo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1 rem;
+    align-self: center;
 }
