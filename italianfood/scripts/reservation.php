@@ -12,7 +12,7 @@
 // exit();
 
 //Load Composer's autoloader
-require '../../vendor/autoload.php';
+require '../../src/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../src');
 $dotenv->load();
 
