@@ -61,7 +61,7 @@ try {
     $mail->Username   =  $_ENV['SMTP_USER'];                     //SMTP username
     $mail->Password   =  $_ENV['SMTP_PASS'];                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = $_ENV['SMTP_PORT'];                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 // $logo = file_get_contents('logo.txt');
 
