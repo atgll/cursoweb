@@ -56,7 +56,7 @@ try {
     //Server settings
     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = $_ENV['SMTP_HOST'];                     //Set the SMTP server to send through
+    $mail->Host       = $_ENV['SMTP_HOST'];;                     //Set the SMTP server to send through
     $mail->SMTPAuth   =  $_ENV['SMTP_AUTH'];                                   //Enable SMTP authentication
     $mail->Username   =  $_ENV['SMTP_USER'];                     //SMTP username
     $mail->Password   =  $_ENV['SMTP_PASS'];                               //SMTP password
