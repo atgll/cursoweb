@@ -4,8 +4,8 @@
 // error_reporting(E_ALL);
 
 // Captura toda la salida y la descarta
-ob_start();
-header('Content-Type: application/json');  // Indica que enviamos JSON
+// ob_start();
+// header('Content-Type: application/json');  // Indica que enviamos JSON
 // echo "<pre>";
 // var_export($_REQUEST);
 // echo "</pre>";
@@ -57,7 +57,7 @@ try {
     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = $_ENV['SMTP_HOST'];                     //Set the SMTP server to send through
-    $mail->SMTPAuth   =  $_ENV['SMTP_AUTH'];                                   //Enable SMTP authentication
+    $mail->SMTPAuth   =  !!($_ENV['SMTP_AUTH'] === "true");                                   //Enable SMTP authentication
     $mail->Username   =  $_ENV['SMTP_USER'];                     //SMTP username
     $mail->Password   =  $_ENV['SMTP_PASS'];                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
