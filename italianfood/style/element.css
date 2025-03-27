@@ -1312,11 +1312,11 @@ footer {
 }
 
 #dialogo1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    line-height: 1.2rem;
+    text-align: center;
     gap: 1rem;
     padding: 1 rem;
     align-self: center;
+    width: 25%;
+    margin: 0 auto;
 }

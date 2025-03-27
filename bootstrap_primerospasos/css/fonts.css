@@ -1,0 +1,64 @@
+.merienda-normal-medium {
+   font-family: "Merienda", cursive;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.merienda-italic-medium {
+   font-family: "Merienda", cursive;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: italic;
+}
+
+.merienda-bold-medium {
+   font-family: "Merienda", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+}
+
+.merienda-bolditalic-medium {
+   font-family: "Merienda", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: italic;
+}
+
+.cinzel-normal {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+.cinzel-italic {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: italic;
+}
+.cinzel-bold {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+}
+.cinzel-bolditalic {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: italic;
+}
+.cinzel-thin {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: normal;
+}
+.cinzel-thinitalic {
+   font-family: "Cinzel", serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: italic;
+}

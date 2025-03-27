@@ -93,7 +93,7 @@ $('.slide').slick({
         },
 
         {
-            breakpoint: 400,
+            breakpoint: 550,
             settings: {
                 dots: false,
                 slidesToShow: 1,

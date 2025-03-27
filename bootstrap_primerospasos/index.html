@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Primeros pasos Bootstrap</title>
+   <link rel="stylesheet" href="./css/bootstrap_css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/fonts.css" class="css">
+</head>
+
+<body>
+   <a role="button" class="bg-secondary position-fixed z-3 rounded-3 bottom-0 end-0" href="#home"><i class="bi-arrow-up-square text-white fs-4 p-1"></i></a>
+   <nav class="nav-bar navbar navbar-expand-lg bg-body-tertiary bg-gradient w-auto d-flex flex-column position-sticky top-0 w-100 z-3">
+      <div class="container-fluid bg-body-tertiary bg-gradient w-100">
+         <a class="navbar-brand cinzel-normal align-self-start" href="#">Jardines Zen</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="justify-content-center collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav cinzel-bold">
+               <li class="nav-item">
+                  <a class="nav-link" href="#home" aria-current="page">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#carouselExampleSlidesOnly">Jardines</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#!">Precios</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div>
+   </nav>
+   <header class="container-fluid d-flex flex-column" id="home">
+      
+      </div class="row text-center justify-content-center align-self-end mt-5" id="textheader">
+      <div class="col-12 col-md-4 align-self-start text-center">
+         <h1 class="cinzel-normal m-2 text-uppercase fs-2"><span class="fs-1 char-title cinzel-normal">J</span>ardines <span class="fs-1 char-title cinzel-normal">Z</span>en</h1>
+      </div>
+      <div class="col-12 col-md-4 align-self-center m-2">
+         <p>Sequi vitae eligendi recusandae
+            perferendis
+            impedit nihil maxime eum corrupti, ipsam quos deserunt eveniet? Saepe obcaecati rerum, in sequi
+            fugiat
+            quaerat quis?</p>
+         <p>Quam unde maiores quo quis, provident qui
+            soluta ipsa, dolor totam exercitationem excepturi non inventore facere explicabo est nulla. In, minima
+            ab!</p>
+      </div>
+      </div>
+   </header>
+   <section class="row text-center justify-content-center m-3">
+      <picture class="col-12 col-md-8 col-lg-10">
+         <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner slider-intro">
+               <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="./sources/apaisado/balsa.jpg" class="d-block w-100 img-fluid img-thumbnail rounded"
+                     alt="...">
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./sources/apaisado/bambu.jpg" class="d-block w-100 img-fluid img-thumbnail rounded"
+                     alt="...">
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./sources/apaisado/budha.jpg" class="d-block w-100 img-fluid img-thumbnail rounded"
+                     alt="...">
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./sources/apaisado/camino_piedras.jpg" class="d-block w-100 img-fluid img-thumbnail rounded"
+                     alt="...">
+               </div>
+               <div class="carousel-item" data-bs-interval="4000">
+                  <img src="./sources/apaisado/flores_cerezo.jpg" class="d-block w-100 img-fluid img-thumbnail rounded"
+                     alt="...">
+               </div>
+            </div>
+         </div>
+      </picture>
+   </section>
+   <section class="container-fluid">
+      <div class="row">
+         <h3 class="cinzel-normal text-center text-capitalize">Nuestros principios</h3>
+         <div class="card-group">
+            <div class="card no-border bg-secondary bg-gradient border-3 tilt-3d" data-tilt data-tilt-perspective="600">
+               <div class="card-body w-75 align-self-center bg-white m-3 text-center translate-z">
+                  <figure class="p-1 fs-1 m-0"><i class="bi-calendar"></i></figure>
+                  <div class="card-body">
+                     <h5 class="card-title cinzel-bold">Puntualidad</h5>
+                     <p class="card-text translate-z">Desde el primer momento nos comprometemos con nuestros calendarios.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="card no-border bg-secondary bg-gradient border-3 tilt-3d" data-tilt data-tilt-perspective="600">
+               <div class="card-body w-75 align-self-center bg-white m-3 text-center translate-z">
+                  <figure class="p-2 fs-1 m-0"><i class="bi-tools"></i></figure>
+                  <div class="card-body">
+                     <h5 class="card-title cinzel-bold">Responsabilidad</h5>
+                     <p class="card-text">Todo, desde materiales a proveedores y mantenimineto lo llevaremos sin provocarle molestias.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="card no-border bg-secondary bg-gradient border-3 tilt-3d" data-tilt data-tilt-perspective="600">
+               <div class="card-body w-75 align-self-center bg-white m-3 text-center translate-z">
+                  <figure class="p-2 fs-1 m-0"><i class="bi-person-plus-fill"></i></figure>
+                  <div class="card-body">
+                     <h5 class="card-title cinzel-bold">Honestidad</h5>
+                     <p class="card-text">Le ofrecemos el mejor presupuesto con los mejores materiales.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="card no-border bg-secondary bg-gradient border-3 tilt-3d" data-tilt data-tilt-perspective="600">
+               <div class="card-body w-75 align-self-center bg-white m-3 text-center translate-z">
+                  <figure class="p-1 fs-1 m-0"><i class="bi-droplet-half"></i></figure>
+                  <div class="card-body">
+                     <h5 class="card-title cinzel-bold">Ecoresponsables</h5>
+                     <p class="card-text">No desperdiciar rescursos es bueno para nosotros nuestros clientes y el planeta.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="container-fluid mt-4" id="proyectos">
+      <div class="controls text-center">
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-filter="all">All</button>
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-filter=".decoracion">decoracion</button>
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-filter=".agua">agua</button>
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-filter=".paisaje">paisaje</button>
+
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-sort="default:asc">Asc</button>
+         <button type="button" class="control btn btn-light btn-succes btn-sm text-capitalize cinzel-thin" data-sort="default:desc">Desc</button>
+      </div>
+
+      <div class="container h-100 bg-light me-auto ms-auto mt-3 mb-3">
+
+         <div class="card mb-3 mix agua">
+            <img src="./sources/apaisado/nenufar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Plantas acuaticas</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix agua">
+            <img src="./sources/vertical/pozo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Sistemas de bombeo</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix decoracion">
+            <img src="./sources/vertical/estatua.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Deco. grandes</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix decoracion">
+            <img src="./sources/apaisado/budha.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Deco. pequeñas</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix paisaje">
+            <img src="./sources/apaisado/bambu.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Plantas jardin</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix paisaje">
+            <img src="./sources/vertical/prueba_boot.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Deco.exterior</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix paisaje">
+            <img src="./sources/vertical/pasillo_piedra.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Construcción</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix decoracion">
+            <img src="./sources/apaisado/vela.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Inspiración</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix agua">
+            <img src="./sources/apaisado/lago.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Charcas y lagunas artificiales</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+         <div class="card mb-3 mix agua">
+            <img src="./sources/vertical/rio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+               <h5 class="card-title cinzel-normal">Grandes instalaciones</h5>
+               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="container-fluid bg-secondary bg-gradient">
+      <div class="row d-flex justify-content-center align-items-center">
+         <div class="col-12 col-lg-10">
+            <div class="row d-flex justify-content-center align-items-stretch p-0">
+               <picture class="overflow-hidden col-12 col-md-5 col-lg-6 p-0 mt-3 mb-3">
+                  <img src="./sources/apaisado/zen_rock2.jpg" class="img-fluid" alt="">
+               </picture>
+               <div class="col-12 col-md-5 bg-light p-5 col-lg-6 mt-3 mb-3 d-flex flex-column justify-content-center  align-items-start">
+                  <h3 class="text-uppercase p-2 m-0 cinzel-bold">zen in zen out</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tenetur natus beatae? Suscipit, fuga explicabo repellat aliquid doloremque nihil, incidunt voluptatum voluptates non iure illum cumque amet laboriosam blanditiis ullam.</p>
+                  <a role="button" href="#proyectos" class="btn btn-dark text-uppercase">shop collection</a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <footer class="container-fluid" id="contacto">
+      <div class="row bg-secondary bg-gradient d-flex justify-content-around align-content-start">
+         <div class="col-6 col-md-3 d-flex flex-column justify-content-start align-content-evenly pb-2 pt-2">
+            <h4 class="text-white p-1 cinzel-normal mb-0">JardinesZen</h4>
+            <p class="text-white p-1 mb-0">Ipsum alias quam doloremque in ipsa ex optio? Aut nisi obcaecati similique
+               reiciendis assumenda, dolore illo, porro quas dolorum eum sint natus.</p>
+            <div class="d-flex justify-content-start align-content-evenly ">
+               <ul class="list-unstyled d-flex justify-content-around align-items-center mb-0">
+                  <li><a class="text-white p-2" href="#!"><i class="bi-facebook"></i></a></li>
+                  <li><a class="text-white p-2" href="#!"><i class="bi-instagram"></i></a></li>
+                  <li> <a class="text-white p-2" href="#!"><i class="bi-tiktok"></i></a></li>
+                  <li><a class="text-white p-2" href="#!"><i class="bi-youtube"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-6 col-md-3 d-flex order-4 flex-column justify-content-start align-content-evenly pb-2 pt-2">
+            <h5 class="text-white p-1 cinzel-normal mb-0">Quick Links</h5>
+            <div class="d-flex justify-content-start align-content-evenly">
+               <ul class="list-unstyled mb-0">
+                  <li><a class="text-white p-1" href="#!">Home</a></li>
+                  <li><a class="text-white p-1" href="#!">Jardines</a></li>
+                  <li> <a class="text-white p-1" href="#!">Precios</a></li>
+                  <li><a class="text-white p-1" href="#!">Contacto</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-6 col-md-3 d-flex order-3  flex-column justify-content-start align-content-evenly pb-2 pt-2">
+            <h5 class="text-white p-1 cinzel-normal mb-0">Help & Info</h5>
+            <div class="d-flex justify-content-start align-content-evenly">
+               <ul class="list-unstyled mb-0">
+                  <li><a class="text-white p-1" href="#!">Track</a></li>
+                  <li><a class="text-white p-1" href="#!">Sucursales</a></li>
+                  <li> <a class="text-white p-1" href="#!">Franquicia</a></li>
+                  <li><a class="text-white p-1" href="#!">Contacto</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-6 col-md-3 d-flex order-lg-5 flex-column justify-content-start align-content-evenly pb-2 pt-2">
+            <h5 class="text-white p-1 cinzel-normal mb-0">Contact Us</h5>
+            <p class="text-white p-1 mb-0">Do you have any questions or sugestions?.</p>
+            <p class="text-white p-1 mb-0"><i class="bi-telephone-inbound-fill p-1"></i>Tel: 948
+               234 956</p>
+            <p class="text-white p-1 mb-0"><i class="bi-envelope-plus-fill p-1"></i>Mail:
+               cosadeprueba@mail.com</p>
+         </div>
+      </div>
+   </footer>
+   <script src="./script/tilt_effect/tilt-effect.js"></script>
+   <script src="./script/main.js"></script>
+   <script src="./script/bootstrap_js/bootstrap.bundle.min.js"></script>
+   <script src="./script/mixitup/dist/mixitup.min.js"></script>
+</body>
+
+</html>

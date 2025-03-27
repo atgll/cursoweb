@@ -11,6 +11,11 @@ header('Content-Type: application/json');  // Indica que enviamos JSON
 // echo "</pre>";
 // exit();
 
+//Load Composer's autoloader
+require '../../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../src');
+$dotenv->load();
+
 function limpiar(string $nombre, int $lenght = 10, bool $isInt = false) {
     return mb_substr(
         htmlspecialchars(
@@ -42,9 +47,6 @@ foreach ($input as $name => $value) {
 }
 
 
-//Load Composer's autoloader
-require '../../vendor/autoload.php';
-
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -54,10 +56,10 @@ try {
     //Server settings
     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'webdesignelche.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'angel@webdesignelche.com';                     //SMTP username
-    $mail->Password   = 'angel#2025';                               //SMTP password
+    $mail->Host       = $_ENV['SMTP_HOST'];                     //Set the SMTP server to send through
+    $mail->SMTPAuth   =  $_ENV['SMTP_AUTH'];                                   //Enable SMTP authentication
+    $mail->Username   =  $_ENV['SMTP_USER'];                     //SMTP username
+    $mail->Password   =  $_ENV['SMTP_PASS'];                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
