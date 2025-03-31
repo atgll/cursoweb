@@ -1,0 +1,71 @@
+#intro {
+   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url(../sources/piedrasyuyu.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#btnregister {
+   border-radius: 3px;
+   width: 150px;
+   transform: translateY(60%);
+}
+
+#imgabout {
+   background-image: url(../sources/harechrisna.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.texttarjeta {
+   background-color: whitesmoke;
+   transform: translateY(-20%);
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+   #intro {
+      height: 50vh;
+   }
+   
+   #btnregister {
+      border-radius: 3px;
+      width: 150px;
+      transform: translateY(175%);
+   }
+   
+   #about {
+      height: 100vh;
+   }
+
+   .imgtarjeta {
+      height: 401px;
+      width: 601px;
+      overflow: hidden;
+   }
+   
+   .texttarjeta {
+      background-color: whitesmoke;
+      transform: translateY(-30%);
+   }
+}
+
+
+@media (min-width: 1200px) {
+   
+}
+
+
+@media (min-width: 1400px) {
+   
+}
