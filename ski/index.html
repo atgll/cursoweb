@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ski-bi</title>
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="./css/fonts.css">
+   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-   
+   <header
+      class="header container-fluid vh-100 d-flex flex-column justify-content-start align-items-center text-white mb-4">
+      <h2 class="page-title text-center mt-4 mb-2">Ski-bi</h2>
+      <nav class="navbar navbar-intro navbar-expand-lg mb-2 mt-2 text-white">
+         <div class="container-fluid text-white">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+               <ul class="navbar-nav nav-ul">
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="!#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#!">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-white" href="#contact">Contact Us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="row d-flex justify-content-center text-header text-center justify-self-center">
+         <div class="col-10 col-md-6 text-center p-4 m-3">
+            <h1>Ven y esquía</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus deserunt libero, repellat ut
+               reiciendis, inventore sit tempora facere cupiditate nobis molestiae culpa itaque minima dolor, beatae
+               similique quaerat. Tenetur!</p>
+         </div>
+      </div>
+      <button class="btn bg-light rounded-pill pe-4 ps-4">Get a quote</button>
+      <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-595129" viewBox="0 0 1080 200"
+         preserveAspectRatio="none">
+         <path style="opacity:1;"
+            d="M 0,200 H 1080 V 115 C 1017.9616,81.957899 982.33965,31.486629 749.09808,91.359505 515.85652,151.23238 414.75176,4.2091924 239.4988,2.1200194 174.2668,3.2425433 76.570003,23.763683 0,122.82649">
+         </path>
+      </svg>
+   </header>
+   <section class="container-fluid services mt-4" id="services">
+      <h3>Services</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officiis consequatur porro voluptatum distinctio
+         aliquam ullam modi.</p>
+      <div class="row d-flex justify-content-center align-items-center">
+         <div class="card col-10 col-md-3 border-none">
+            <img src="./sources/imagenes/tarjetas/casas2.jpg" class="card-img-top img-fluid rounded" alt="...">
+            <a href="#" class="btn btn-primary rounded-pill align-self-center pe-4 ps-4 m-4">Alojamiento</a>
+         </div>
+         <div class="card col-10 col-md-3 border-none">
+            <img src="./sources/imagenes/tarjetas/equipo_squi.jpg" class="card-img-top img-fluid rounded" alt="...">
+            <a href="#" class="btn btn-primary rounded-pill align-self-center pe-4 ps-4 m-4">For-fait</a>
+         </div>
+         <div class="card col-10 col-md-3 border-none">
+            <img src="./sources/imagenes/tarjetas/teleferico_snowboard.jpg" class="card-img-top img-fluid rounded"
+               alt="...">
+            <a href="#" class="btn btn-primary rounded-pill align-self-center pe-4 ps-4 m-4">Instalaciones</a>
+         </div>
+      </div>
+   </section>
+   <section class="container-fluid" id="about">
+      <div class="row d-flex justify-content-center align-items-center">
+         <div class="col-10 col-md-5 p-4 m-3">
+            <h2 class="mb-4">About Us</h2>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum voluptates eveniet et ipsa!
+               Consequatur sapiente ea repellat necessitatibus facere, possimus saepe, inventore nulla dicta nam quos
+               vel, consequuntur adipisci!</p>
+            <a href="#" class="btn btn-dark rounded-pill align-self-center pe-4 ps-4 m-4">Read More</a>
+         </div>
+         <div class="col-10 col-md-5 text-center p-4 m-3">
+            <img src="./sources/imagenes/persona_camina.jpg" class="img-fluid" alt="...">
+         </div>
+      </div>
+   </section>
+   <section class="container-fluid vh-100 d-flex justify-content-center position-relative" id="contVideo">
+      <div class="divider-video-top z-1" id="divTop">
+         <img src="./sources/dividers/divider.svg" alt="">
+      </div>
+      <!-- <video class="img-fluid z-0" src="./sources/video/7166365-uhd_3840_2160_24fps.mp4"></video> -->
+      <div class="row d-flex flex-column justify-content-center z-2 text-white position-absolute top-50 start-50 translate-middle text-center" id="videoText">
+         <h2>See our Video</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illum, inventore natus unde illo quod tempora facilis architecto voluptatum possimus asperiores laudantium veritatis in ratione nemo dolorum repellat ad voluptatem!</p>
+         <button type="button" class="btn rounded-circle fs-1" id="play-button"><i class="bi-play-circle"></i></button>
+      </div>
+      <div class="divider-video-bottom z-1" id="divBottom">
+         <img src="./sources/dividers/divider.svg" alt="">
+      </div>
+      <video class="z-0" src="./sources/video/videoski.mp4" id="video"></video>
+   </section>
+   <footer
+      class="container-fluid vh-100 footer mt-4 d-flex flex-column justify-content-center align-items-center text-white position-relative"
+      id="contact">
+      <div class="divider-footer">
+         <img src="./sources/dividers/divider.svg" alt="">
+      </div>
+      <div class="row d-flex justify-content-center mb-3">
+         <div class="form-floating text-black d-flex justify-content-center">
+            <input type="email" class="form-control" id="floatingInput" placeholder="example@example.com">
+               <label class="text-black" for="floatingInput">Enter your email</label>
+            <button class="btn btn-outline-light text-uppercase" type="submit" id="button-addon2">subscribe</button>
+         </div>
+      </div>
+      <div class="btn-group d-flex flex-column">
+         <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact Us
+         </button>
+         <ul class="dropdown-menu p-3 bg-success text-center text-white">
+            <li>
+               <p><i class="bi-telephone-fill p-2"></i>134-567-342</p>
+            </li>
+            <li>
+               <p><i class="bi-envelope-at-fill p-2"></i>esquiaaqui@nieve.com</p>
+            </li>
+         </ul>
+         <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quick Links
+         </button>
+         <ul class="dropdown-menu p-3 bg-success">
+            <ul class="list-unstyled mb-0">
+               <li><a class="text-white p-1" href="#!">Home</a></li>
+               <li><a class="text-white p-1" href="#!">About</a></li>
+               <li> <a class="text-white p-1" href="#!">Services</a></li>
+               <li><a class="text-white p-1" href="#!">Blog</a></li>
+            </ul>
+         </ul>
+
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center pb-2 pt-2 z-2">
+         <h3>Ski-bi</h3>
+         <p class="text-white p-1 m-2">Ipsum alias quam doloremque in ipsa ex optio? Aut nisi obcaecati similique
+            reiciendis assumenda, dolore illo, porro quas dolorum eum sint natus.</p>
+         <div class="d-flex justify-content-start align-content-evenly m-2">
+            <ul class="list-unstyled d-flex justify-content-around align-items-center mb-0">
+               <li><a class="text-white p-2" href="#!"><i class="bi-facebook"></i></a></li>
+               <li><a class="text-white p-2" href="#!"><i class="bi-instagram"></i></a></li>
+               <li> <a class="text-white p-2" href="#!"><i class="bi-tiktok"></i></a></li>
+               <li><a class="text-white p-2" href="#!"><i class="bi-youtube"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="row d-flex justify-content-center text-center line-footer text-white position-absolute bottom-0 start-50 translate-middle-x p-1 m-0">
+         <h6 class="text-capitalize m-0">2025 All rights reserved design by Atgll</h6>
+      </div>
+   </footer>
+   <script src="./scripts/bootstrap.bundle.min.js"></script>
+   <script src="./scripts/main.js"></script>
 </body>
+
 </html>
