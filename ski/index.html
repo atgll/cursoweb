@@ -12,9 +12,11 @@
 </head>
 
 <body>
+   <a role="button" class="bg-success position-fixed z-3 rounded-3 bottom-0 end-0" href="#home"><i
+         class="bi-arrow-up-square text-white fs-4 p-1"></i></a>
    <header
       class="header container-fluid vh-100 d-flex flex-column justify-content-start align-items-center text-white mb-4">
-      <h2 class="page-title text-center mt-4 mb-2">Ski-bi</h2>
+      <h2 class="page-title text-center mt-4 mb-2" id="home">Ski-bi</h2>
       <nav class="navbar navbar-intro navbar-expand-lg mb-2 mt-2 text-white">
          <div class="container-fluid text-white">
             <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
@@ -24,16 +26,16 @@
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
                <ul class="navbar-nav nav-ul">
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="!#">Home</a>
+                     <a class="nav-link text-white" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="about">About</a>
+                     <a class="nav-link text-white" href="#about">About</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link text-white" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#!">Blog</a>
+                     <a class="nav-link text-white" href="#blog">Blog</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link text-white" href="#contact">Contact Us</a>
@@ -50,7 +52,7 @@
                similique quaerat. Tenetur!</p>
          </div>
       </div>
-      <button class="btn bg-light rounded-pill pe-4 ps-4">Get a quote</button>
+      <a class="btn bg-light rounded-pill pe-4 ps-4" href="./quotes.html">Get a quote</a>
       <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-595129" viewBox="0 0 1080 200"
          preserveAspectRatio="none">
          <path style="opacity:1;"
@@ -92,20 +94,77 @@
          </div>
       </div>
    </section>
-   <section class="container-fluid vh-100 d-flex justify-content-center position-relative" id="contVideo">
+   <section class="container-fluid vh-100 d-flex justify-content-center position-relative cont-video" id="blog">
       <div class="divider-video-top z-1" id="divTop">
          <img src="./sources/dividers/divider.svg" alt="">
       </div>
       <!-- <video class="img-fluid z-0" src="./sources/video/7166365-uhd_3840_2160_24fps.mp4"></video> -->
-      <div class="row d-flex flex-column justify-content-center z-2 text-white position-absolute top-50 start-50 translate-middle text-center" id="videoText">
+      <div
+         class="row d-flex flex-column justify-content-center z-2 text-white position-absolute top-50 start-50 translate-middle text-center"
+         id="videoText">
          <h2>See our Video</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illum, inventore natus unde illo quod tempora facilis architecto voluptatum possimus asperiores laudantium veritatis in ratione nemo dolorum repellat ad voluptatem!</p>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi illum, inventore natus unde illo quod
+            tempora facilis architecto voluptatum possimus asperiores laudantium veritatis in ratione nemo dolorum
+            repellat ad voluptatem!</p>
          <button type="button" class="btn rounded-circle fs-1" id="play-button"><i class="bi-play-circle"></i></button>
       </div>
       <div class="divider-video-bottom z-1" id="divBottom">
          <img src="./sources/dividers/divider.svg" alt="">
       </div>
       <video class="z-0" src="./sources/video/videoski.mp4" id="video"></video>
+   </section>
+   <section class="container-fluid d-flex flex-column align-items-center">
+      <h1>Real Experiences</h1>
+      <div class="row d-flex justify-content-center align-items-center">
+         <div class="col-10 col-lg-8 p-5-md">
+            <div id="carouselExampleIndicators" class="carousel slide">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="card text-bg-dark carousel-item active">
+                     <img src="./sources/imagenes/montañas_squiador.jpg" class="card-img img-fluid" alt="...">
+                     <div class="card-img-overlay">
+                        <h5 class="card-title text-black">Card title</h5>
+                        <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                     </div>
+                  </div>
+                  <div class="card text-bg-dark carousel-item active">
+                     <img src="./sources/imagenes/motonieve.jpg" class="card-img img-fluid" alt="...">
+                     <div class="card-img-overlay">
+                        <h5 class="card-title text-black">Card title</h5>
+                        <p class="card-text text-black">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                     </div>
+                  </div>
+                  <div class="card text-bg-dark carousel-item active">
+                     <img src="./sources/imagenes/snowboard_salto.jpg" class="card-img img-fluid" alt="...">
+                     <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                           additional content. This content is a little bit longer.</p>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+         </div>
+      </div>
    </section>
    <footer
       class="container-fluid vh-100 footer mt-4 d-flex flex-column justify-content-center align-items-center text-white position-relative"
@@ -116,7 +175,7 @@
       <div class="row d-flex justify-content-center mb-3">
          <div class="form-floating text-black d-flex justify-content-center">
             <input type="email" class="form-control" id="floatingInput" placeholder="example@example.com">
-               <label class="text-black" for="floatingInput">Enter your email</label>
+            <label class="text-black" for="floatingInput">Enter your email</label>
             <button class="btn btn-outline-light text-uppercase" type="submit" id="button-addon2">subscribe</button>
          </div>
       </div>
@@ -137,10 +196,10 @@
          </button>
          <ul class="dropdown-menu p-3 bg-success">
             <ul class="list-unstyled mb-0">
-               <li><a class="text-white p-1" href="#!">Home</a></li>
-               <li><a class="text-white p-1" href="#!">About</a></li>
-               <li> <a class="text-white p-1" href="#!">Services</a></li>
-               <li><a class="text-white p-1" href="#!">Blog</a></li>
+               <li><a class="text-white p-1" href="#home">Home</a></li>
+               <li><a class="text-white p-1" href="#about">About</a></li>
+               <li> <a class="text-white p-1" href="#services">Services</a></li>
+               <li><a class="text-white p-1" href="#blog">Blog</a></li>
             </ul>
          </ul>
 
@@ -158,7 +217,8 @@
             </ul>
          </div>
       </div>
-      <div class="row d-flex justify-content-center text-center line-footer text-white position-absolute bottom-0 start-50 translate-middle-x p-1 m-0">
+      <div
+         class="row d-flex justify-content-center text-center line-footer text-white position-absolute bottom-0 start-50 translate-middle-x p-1 m-0">
          <h6 class="text-capitalize m-0">2025 All rights reserved design by Atgll</h6>
       </div>
    </footer>

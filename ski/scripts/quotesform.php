@@ -34,12 +34,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 $input = [
-    'reservation-date' => [10, false],
-    'reservation-hour' => [5, false],
-    'client' => [128, false],
-    'email' => [256, false],
-    'tel' => [12, true],
-    'message' =>  [250, false],
+    'username' => [128, false],
+    'usermail' => [128, false],
+    'usertel' => [12, true],
+    'city' => [25, false],
+    'provincia' => [25, false],
+    'cp' => [5, true],
+    'date' => [10, false],
+    'peoplenum' => [1, true],
+    'plan' => [6, false]
 ];
 
 foreach ($input as $name => $value) {
@@ -65,7 +68,7 @@ try {
 
 // $logo = file_get_contents('logo.txt');
 
-$body = 'Mr/Mrs. ' . $input['client'] . 'Ha hecho una reserva el ' . $input['reservation-date'] . ' a las' .$input['reservation-hour']. '. Su contacto es tel: ' . $input['tel'] . ' mail: ' . $input['email'] . '. Especificaciones: ' . $input['message'] . '';
+$body = 'Mr/Mrs. ' . $input['username'] . 'De '  . $input['city'] . ', ' . $input['provincia'] . 'C.P.: ' . $input['cp'] . 'Pide un presupuesto para las siguientes fechas y personas : ' . $input['date'] . ', ' .$input['peoplenum']. '. Su contacto es tel: ' . $input['usertel'] . ' mail: ' . $input['usermail'] . '. Para el plan: ' . $input['plan'] . '';
 
     //Recipients
     $mail->setFrom('angel@webdesignelche.com', 'Mailer');
@@ -77,10 +80,11 @@ $body = 'Mr/Mrs. ' . $input['client'] . 'Ha hecho una reserva el ' . $input['res
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'The Laurel';
-    $mail->Body    = $body = 'Mr/Mrs. ' . $input['client'] . 'Ha hecho una reserva el ' . $input['reservation-date'] . ' a las' .$input['reservation-hour']. '. Su contacto es tel: ' . $input['tel'] . ' mail: ' . $input['email'] . '. Especificaciones: ' . $input['message'] . '';
-    $mail->AltBody = 'Mr/Mrs. ' . $input['client'] . ' Ha hecho una reserva el ' . $input['reservation-date'] . ' a las ' .$input['reservation-hour']. '.Su contacto es tel: ' . $input['tel'] . ' mail: ' . $input['email'] . '. Especificaciones: ' . $input['message'] . '';
-    
+    $mail->Subject = 'Ski-bi';
+    $mail->Body    = $body = 'Mr/Mrs. ' . $input['username'] . '. De '  . $input['city'] . ', ' . $input['provincia'] . ', C.P.: ' . $input['cp'] . 'Pide un presupuesto para las siguientes fechas y personas: ' . $input['date'] . ', ' .$input['peoplenum']. '. Su contacto es tel: ' . $input['usertel'] . ' mail: ' . $input['usermail'] . '. Para el plan: ' . $input['plan'] . '.';
+
+    $mail->AltBody = 'Mr/Mrs. ' . $input['username'] . 'De '  . $input['city'] . ', ' . $input['provincia'] . 'C.P.: ' . $input['cp'] . 'Pide un presupuesto para las siguientes fechas y personas: ' . $input['date'] . ', ' .$input['peoplenum']. '. Su contacto es tel: ' . $input['usertel'] . ' mail: ' . $input['usermail'] . '. Para el plan: ' . $input['plan'] . '.';
+
     $mail->send();
     ob_end_clean();
     echo json_encode(value: ["mensaje" =>"Message has been sent"]);

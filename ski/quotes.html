@@ -24,19 +24,19 @@
             <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
                <ul class="navbar-nav nav-ul">
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="!#">Home</a>
+                     <a class="nav-link text-white" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="about">About</a>
+                     <a class="nav-link text-white" href="./index.html #about">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#services">Services</a>
+                     <a class="nav-link text-white" href="./index.html #services">Services</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#!">Blog</a>
+                     <a class="nav-link text-white" href="./index.html #blog">Blog</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#contact">Contact Us</a>
+                     <a class="nav-link text-white" href="./index.html #contact">Contact Us</a>
                   </li>
                </ul>
             </div>
@@ -50,7 +50,7 @@
                similique quaerat. Tenetur!</p>
          </div>
       </div>
-      <button class="btn bg-light rounded-pill pe-4 ps-4">Get a quote</button>
+      <a href="./index.html" class="btn bg-light rounded-pill pe-4 ps-4">Go to start</a>
       <svg xmlns="http://www.w3.org/2000/svg" class="divider-img-595129" viewBox="0 0 1080 200"
          preserveAspectRatio="none">
          <path style="opacity:1;"
@@ -58,9 +58,80 @@
          </path>
       </svg>
    </header>
-   <form action="">
-      
-   </form>
+   <section class="container-fluid cont-form text-center p-3">
+      <h2>Get a quote</h2>
+      <p>Place your data and our tema will search the best plan for you.</p>
+      <form enctype="application/x-www-form-urlencoded" class="row d-flex flex-column align-items-center" id="formQuotes">
+         <div class="row d-flex flex-column gap-1 col-10 col-md-8" id="identify">
+            <h4>Identify</h4>
+            <div class="input-group flex-nowrap">
+               <span class="input-group-text" for="username">Your name</span>
+               <input type="text" class="form-control" id="username" name="username" placeholder="Name & Surname"
+                  aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+               <span class="input-group-text" for="usermail">E-mail</span>
+               <input type="mail" class="form-control" id="usermail" name="usermail" placeholder="examle@example.com"
+                  aria-label="E-mail">
+            </div>
+            <div class="input-group flex-nowrap">
+               <span class="input-group-text" for="usertel">Telephone</span>
+               <input type="mail" class="form-control" id="usertel" name="usertel" placeholder="123 123 123"
+                  aria-label="E-mail">
+            </div>
+            <div class="d-flex flex-column flex-lg-row g-3">
+               <p class="m-1 fw-bold ">Direction:</p>
+               <div class="col-sm-7">
+                  <input type="text" class="form-control" name="city" id="city" placeholder="City" aria-label="City">
+               </div>
+               <div class="col-sm">
+                  <input type="text" class="form-control" name="provincia" id="provincia" placeholder="Provincia"
+                     aria-label="State">
+               </div>
+               <div class="col-sm">
+                  <input type="text" class="form-control" name="cp" id="cp" placeholder="C.P"
+                     aria-label="Codigo Postal">
+               </div>
+            </div>
+         </div>
+         <div class="row d-flex flex-column gap-1 col-10 col-md-8 m-2" id="plan">
+            <h4>Select your options</h4>
+            <div class="d-flex flex-column gap-1 justify-content-around">
+               <div class="input-group flex-nowrap">
+                  <label class="input-group-text" for="date"><i class="bi-calendar p-1"></i>When: </label>
+                  <input class="form-control" type="date" name="date" id="date">
+               </div>
+               <div class="input-group flex-nowrap">
+                  <label class="input-group-text" for="peoplenum">People: </label>
+                  <select class="form-select" name="peoplenum" id="peoplenum" aria-label="Number of people">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                  </select>
+               </div>
+               <div class="input-group flex-nowrap">
+                  <label class="input-group-text" for="plan">Choose your plan: </label>
+                  <select class="form-select" name="plan" id="plan" aria-label="Number of people">
+                     <option value="plan1">Plan 1</option>
+                     <option value="plan2">Plan 2</option>
+                     <option value="plan3">Plan 3</option>
+                     <option value="plan4">Plan 4</option>
+                     <option value="plan5">Plan 5</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         <div class="col-12">
+            <input class="btn btn-success fs-4 m-2" type="submit" valor="Send"></input>
+         </div>
+      </form>
+      <dialog id="dialogo1" class="pt-serif-regular">
+         <button autofocus id="botoncierre">Close</button>
+         <p id="textodialogo"></p>
+      </dialog>
+   </section>
    <footer
       class="container-fluid vh-100 footer mt-4 d-flex flex-column justify-content-center align-items-center text-white position-relative"
       id="contact">
