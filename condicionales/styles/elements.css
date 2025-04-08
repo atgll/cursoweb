@@ -1,0 +1,37 @@
+#startEj1 {
+   text-align: center;
+   width: 300px;
+   height: 150px;
+   background-color:honeydew;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+#resultEj1 {
+   color: rgb(0, 0, 0);
+}
+
+#ulEj3 {
+   list-style-type: none;
+}
+
+#ulEj3 li {
+   padding: 3px;
+   display: inline-block;
+}
+
+#nombresEj4 {
+   list-style-type: none;
+}
+
+#nombresEj4 li {
+   padding: 3px;
+   display: inline-block;
+}
+
+#contadorEj5 {
+   width: 30px;
+   text-align: center;
+   border: 1px solid black;
+   border-radius: 5px;
+}

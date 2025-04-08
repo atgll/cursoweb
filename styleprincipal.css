@@ -1,8 +1,27 @@
-body {
+.body-dark {
     font-family: "JetBrains Mono", sans-serif;
     background-color: rgb(41, 48, 54);
     color: aliceblue;
     margin: 25px;
+}
+
+.body-light {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: aliceblue;
+    color: rgb(41, 48, 54);
+    margin: 25px;
+}
+
+.button-dark {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: rgb(41, 48, 54);
+    color: aliceblue;
+}
+
+.button-light {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: aliceblue;
+    color: rgb(41, 48, 54);
 }
 
 ul {
@@ -13,17 +32,31 @@ li::before {
     content: "=>";
 }
 
-a {
+.a-dark {
+    font-family: "JetBrains Mono", sans-serif;
     color: aliceblue;
     font-size: 15px;
 }
 
-a:hover {
-    background: linear-gradient(to right, rgb(141, 145, 148),  rgb(90, 95, 100), rgb(41, 48, 54));
+.a-light {
+    font-family: "JetBrains Mono", sans-serif;
+    color: rgb(41, 48, 54);
+    font-size: 15px;
+}
+
+.a-dark:hover {
+    background: linear-gradient(to right, rgb(182, 184, 186), rgb(141, 145, 148), rgb(41, 48, 54));
     /*background-color: rgba(105, 105, 105, 0.356);*/
-    color: rgb(0, 0, 0);
+    color: rgb(35, 35, 35);
     font-size: 18px;
-   
+    transition: 0.3s;
+}
+
+.a-light:hover {
+    background: linear-gradient(to right, aliceblue, rgb(148, 149, 152), aliceblue);
+    /*background-color: rgba(105, 105, 105, 0.356);*/
+    color: rgb(35, 35, 35);
+    font-size: 18px;
     transition: 0.3s;
 }
 

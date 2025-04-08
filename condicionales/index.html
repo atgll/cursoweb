@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Condicionales y loops JS</title>
+   <link rel="stylesheet" href="./styles/elements.css">
+</head>
+<body>
+   <h1>Hoja de ejercicios JS: Condicionales, DOM y Bucles</h1>
+
+   <div>
+   <h3>Ejercicio 1: Prompt pide un número y dice si es mayor o menor que diez.</h3>
+   <p>Pasa el raton por el recuadro para empezar.</p>
+   <div id="startEj1">
+      
+      <h4 id="resultEj1"></h4>
+      
+   </div>
+   </div>
+   <div>
+      <h3>Ejercicio 2: Cambia el color de li con número impar.</h3>
+      <p>Introduce un número para empezar</p>
+      <form id="formEj2" name="formEj2" method="post">
+         <div>
+            <input type="number" name="numberEj2" id="numberEj2">
+            <input type="button" name="buttonEj2" id="buttonEj2" value="Enviar" onclick="Ejercicio2()">
+         </div>
+      </form>
+      <ul id="ulEj2">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+   </div>
+   <div>
+      <h3>Ejercicio 3: Cuenta asta 10 y señala los pares.</h3>
+      <p>Introduce 1</p>
+      <form id="formEj3" name="formEj3" method="post">
+         <div>
+            <input type="number" name="numberEj3" id="numberEj3">
+            <input type="button" name="buttonEj3" id="buttonEj3" value="Enviar" onclick="Ejercicio3()">
+            <input type="reset" value="Borrar" onclick="resetEj3()">
+         </div>
+      </form>
+      <p>Lista:</p>
+      <ul id="ulEj3">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+   </div>
+   <div>
+      <h3>Ejercicio 4: Añade nombres a la lista.</h3>
+      <p>Introduce un nombre.</p>
+      <form id="formEj4" method="post">
+         <input type="text" id="nombreEj4" name="nombreEj4" placeholder="Nombre">
+         <input type="button" id="buttonEj4" name="buttonEj4" value="Enviar" onclick="addName()">
+      </form>
+      <p>Lista de nombres:</p>
+      <ul id="nombresEj4">
+      </ul>
+   </div>
+   <div>
+      <h3>Ejercicio 5: Contador de clicks.</h3>
+      <p>Haz click en el botón para contar.</p>
+      <button type="button" id="clicksbtn">Click</button>
+      <span id="contadorEj5">0</span>
+   </div>
+   <div>
+      <h3>Ejercicio 6: Da una respuesta adecuada a la edad. </h3>
+      <p>Introduce tu edad:</p>
+      <form id="formEj6" method="post">
+         <input type="number" name="edad" id="edad" placeholder="Edad">
+         <input type="button" value="Enviar" id="btnEdad">
+      </form>
+      <p>Resultado:</p>
+      <p id="respuestaEdad"></p>
+   </div>
+   <div>
+      <h3>Ejercicio 7: Cuenta de 5 asta 15</h3>
+      <p>Cuenta:</p>
+      <ul id="listaNumeros"></ul>
+   </div>
+   <div>
+      <h3>Ejercicio 8: Haz click en el texto para cambiarlo.</h3>
+      <div id="contParrafos">
+         <p>¡Pincha aquí!</p>
+         <p>¡Pincha aquí!</p>
+         <p>¡Pincha aquí!</p>
+         <p>¡Pincha aquí!</p>
+         <p>¡Pincha aquí!</p>
+      </div>
+   </div>
+   <div>
+      <h3>Ejercicio 9: Lista de personas mayores de edad.</h3>
+      <p>Desde una array de objetos mostramos las personas mayores de edad.</p>
+      <p>Lista:</p>
+      <ul id="listaCompleta">
+
+      </ul>
+      <p>Mayores de edad:</p>
+      <ul id="mayoresEdad">
+
+      </ul>
+   </div>
+   <script src="./scripts/main.js"></script>
+</body>
+</html>
