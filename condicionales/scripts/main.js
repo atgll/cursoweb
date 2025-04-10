@@ -186,8 +186,8 @@ fetch(urlcategories).then(response => response.json()).then(data => { createCate
 let contenedorBotones = document.getElementById("categoriesSelect")
 
 const categories = [
-   ["Science", "green", "#005400"],
-   ["Entertainment", "pink", "#fd6882"],
+   ["Science", "green", "#005400", "idcat" = [17, 18, 19, 28, 30]],
+   ["Entertainment", "pink", "#fd6882", "idcat" = [10, 11, 12, 13, 14, 15, 16, 32, 32]],
    ["Sports", "orange", "darkorange"],
    ["Geography", "blue", "darkblue"],
    ["History", "yellow", "#ceaf00"],
