@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>PaperCss y MySQL</title>
+   <link rel="stylesheet" href="./css/paper.css">
 </head>
+
 <body>
-   <p>hola</p>
+   <div class="container container-lg">
+      <nav class="border split-nav margin-top-small">
+         <div class="nav-brand">
+            <h3><a href="#!">WebSite</a></h3>
+         </div>
+         <div class="collapsible">
+            <input type="text" id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+               <ul class="inline">
+                  <li><a href="#!">Inicio</a></li>
+                  <li><a href="#!">Nosotros</a></li>
+                  <li><a href="#!">Contacto<a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+   <div class="container conatainer-sm margin-top-small">
+      <div class="row">
+         <div class="col">
+            <img src="./css/img/imagen_costura.avif" alt="imagencostura">
+         </div>
+      </div>
+   </div>
+   <div class="container container-lg">
+      <div class="row">
+         <div class="col">
+            <h4>Articulos Recientes</h4>
+         </div>
+      </div>
+      <div class="row flex-center" id="articulos_recientes">
+      </div>
+   </div>
+   <!-- Definicion de la plantilla html para la tarjeta de articulos -->
+   <template id="plantilla_articulos_1">
+      <div class="col col-4">
+         <div class="card border">
+            <div class="card-body">
+               <h4 class="card-title">Titulo</h4>
+               <h5 class="card-subtitle">Subtitulo</h5>
+               <p class="card-text">Texto</p>
+               <button>Boton</button>
+            </div>
+            <img class="image-bottom" src="" alt="">
+         </div>
+      </div>
+   </template>
+   <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>
